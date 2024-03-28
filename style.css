@@ -12,6 +12,21 @@ footer{
 }
 
 .foot-link-box{
+    width: 68%;
+    border: 2px solid rgb(45, 39, 163);
+    margin: auto;
+}
+.foot-link-1{
+    margin: 40px;
+    border: 2px solid green;
+    background-color: aquamarine;
+}
 
+.foot-link-1 ul{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-link-1 ul li{
+    list-style: none;
 }
 
