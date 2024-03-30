@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.top-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color:aqua;
+}
+.top-container .logo{
+    font-size: 54px;
+    color: orange;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+.nav-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.nav-navbar{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+}
+.nav-navbar li a{
+    text-decoration: none;
+    
+}
+.nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px 20px;
+    margin: 20px 20px;
+    font-size: 30px;
+    
+}
+
+.collapse {
+    display: none;
+    position: relative;
+    background: #0057B0;
+    min-width: max-content;
+    z-index: 1;
+    margin: 41px 0;
+    /* width: 100%; */
+}
+.active .collapse {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 40px;
+    background: #0057B0;
+    min-width: max-content;
+    z-index: 1;
+}
+.nav li {
+    margin-bottom: 5px; 
+}
+.nav li a {
+    color: black;
+    font-size: 20px;
+    padding: 6px 15px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.nav li a:hover {
+    background-color: #ccc; 
+    color: #fff; 
+}
+
+.container {
+    max-width: 980px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto 0;
+    margin-top: 50px;
+    
+}
+.container h1 {
+    font-size: 4.1875em;
+    line-height: 1.07462686567164em;
+    margin: 0;
+    margin-bottom: 0.71641791044776em;
+    font-weight: normal;
+    color: #00274a;
+    max-width: 800px;
+    font-weight: 700;
+    
+}
+/* h1, h2 {
+    letter-spacing: .5px;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 1.26316em;
+    margin-bottom: 0.63158em;
+} */
+.text{
+    max-width: 900px;
+}
+.text h2{
+    letter-spacing: .5px;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 2.375em;
+    line-height: 1.26316em;
+    margin-bottom: 0.63158em;
+}
+p{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.consultant{
+    max-width: 980px;
+    display: flex;
+    gap: 45px;
+    margin: 0 auto 0;
+    padding-right: 30px;
+    margin-top: 30px;
+    flex-wrap:wrap;
+    margin-bottom: 50px;
+}
+
+.box img{
+    border-radius: 50%;
+    width: 200px;
+}
+.box h3{
+    text-align: center;
+    margin-top: 15px;
+    color: #0057B0;
+}
+.function{
+    font-size: 15px;
+    text-align: center;
+}
+.senior{
+    text-align: left;
+    font-size: 35px;
+    color: #00274a;
+    margin-top: 80px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .top-container {
+        padding: 20px 50px;
+        
+    }
+    .nav-container {
+        padding: 20px 100px;
+    }
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .consultant {
+        max-width: 980px;
+        gap: 45px;
+        padding-right: 30px;
+    }
+    .box img {
+        width: 200px;
+    }
+}
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 767px) {
+    .top-container {
+        padding: 20px;
+    }
+    .nav-container {
+        padding: 20px;
+    }
+    .nav-navbar {
+        gap: 20px;
+        font-size: 16px;
+    }
+    .nav li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 80px;
+    }
+    .container h1,
+    h2 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .consultant {
+        max-width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+    }
+    .box img {
+        width: 250px;
+    }
+    .box h3 {
+        font-size: 20px;
+    }
+    .function {
+        font-size: 14px;
+    }
+    .senior {
+        font-size: 28px;
+    }
+}
