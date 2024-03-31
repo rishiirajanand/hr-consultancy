@@ -59,6 +59,12 @@ input {
     border: 1px solid #ddd;
     height: 42px;
 }
+#errorMsg{
+    color: red;
+    text-align: center;
+    font-weight: 750;
+    padding: 20px;
+}
 
 textarea {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

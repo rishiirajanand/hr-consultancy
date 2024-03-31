@@ -19,14 +19,22 @@
                     <div class="formGrp">
                         <label for="name">Name</label>
                         <input class="inp" type="text" id="name">
+
                     </div>
                     <div class="formGrp">
                         <label for="surname">Surname</label>
                         <input class="inp" type="text" id="surname">
+
                     </div>
                     <div class="formGrp">
                         <label for="email">E-mail</label>
                         <input class="inp" type="email" id="email">
+
+                    </div>
+                    <div class="formGrp">
+                        <label for="phone">Phone</label>
+                        <input class="inp" type="tel" id="phone">
+
                     </div>
 
                     <div class="formGrp">
@@ -42,7 +50,9 @@
                         <textarea rows="3" cols="30"></textarea>
                     </div>
 
-                    <button>Send</button>
+                    <button id="btn">Send</button>
+
+                    <p id="errorMsg"></p>
 
                 </div>
             </form>
@@ -139,6 +149,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="applicationForm.js"></script>
 </body>
 
 </html>
