@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    font-family: "Roboto", sans-serif;
+}
+
+.main-container{
+    max-width: 750px;
+    /* border: 2px solid black; */
+    margin: 4% 0px;
+    
+}
+.heading-box{
+    margin-bottom: 2rem;
+    text-align: left;
+}
+.heading-box h1{
+    font-size: 60px;
+    color: #00274A;
+    margin-bottom: 2rem;
+}
+iframe{
+    margin-bottom: 2rem;
+}
+.heading-box p{
+    color: #00274A;
+    font-size: 22px;
+    margin-bottom: 2rem;
+}
+.heading-box p a{
+    color: #00274A;
+}
+
+.press-news{
+    margin-top: 2rem;
+    color: #00274A;
+}
+.news-box{
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 2rem 0px;
+}
+.news-box a{
+    text-decoration: none;
+    color: #008AD0;
+    font-weight: 600;
+}
+.news-box a:hover{
+    color: #00274A;
+}
+.news-box span{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+    opacity: 40%;
+}
+
+.archive-btn{
+    background-color: #0057B0;
+    width: 150px;
+    height: 70px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.archive-btn:hover{
+    background-color: #00274A;
+}
+
+.archive-btn sapn{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.archive-btn i{
+    margin-left: 1rem;
+    font-size: 25px;
+}
+#btn{
+    text-decoration: none;
+}
+
+

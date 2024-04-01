@@ -114,12 +114,19 @@ h1 small {
 footer {
   width: 100%;
 }
+.foot-first-box h4 a{
+color: black;
+font-weight: bold;
+font-size: 19px;
+}
 
 .foot-first-box {
   width: 100%;
   background-color: #f6f4f1;
   display: flex;
   justify-content: center;
+  background-color: #0062ab;
+  border-radius: 10px;
 }
 
 .foot-box-1 {
@@ -196,6 +203,110 @@ footer {
   font-size: 16px;
   font-weight: 700;
 }
+/*Santu  */
+link[rel="icon"] {
+  width: 100px;
+  height: 150px; 
+}
+
+@keyframes superAnimation1 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    background-color: #ffcc00;
+  }
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    background-color: #ff0000;
+  }
+}
+.foot-links a {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.foot-links a:hover {
+  animation: superAnimation1 0.5s infinite alternate;
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.foot-last-text {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-out forwards; 
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  50% {
+      transform: translateY(-20px); 
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.foot-last-text {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-out forwards, bounce 1s ease-in-out infinite alternate; 
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px); 
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.last-text-head {
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+.text:hover, .article-big-text:hover {
+  color: red;
+  font-weight: bold;
+}
+.onecol h1:hover{
+color: red;
+=======
 
 /* nav */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
