@@ -3,49 +3,85 @@ let surname = document.getElementById("surname");
 let email = document.getElementById("email");
 let phone = document.getElementById("phone");
 let button = document.getElementById("btn");
-let error = document.getElementById("errorMsg");
+let nameError = document.getElementById("nameError");
+let surnameError = document.getElementById("surnameError");
+let emailError = document.getElementById("emailError");
+let phoneError = document.getElementById("phoneError");
+let successMsg = document.getElementById("successMsg");
 
 function validation(e) {
   e.preventDefault();
 
-  let nameValue = name.value;
-  let surnameValue = surname.value;
-  let emailValue = email.value;
-  let phoneValue = phone.value;
+  let regex = /^[0-9]{10}$/;
+  let nameValue = name.value.trim();
+  let surnameValue = surname.value.trim();
+  let emailValue = email.value.trim();
+  let phoneValue = phone.value.trim();
 
   let isValid = true;
 
   if (nameValue.length < 3) {
-    error.innerHTML = "Invalid name or name should be at least 3 characters";
+    nameError.innerHTML = "Name should be at least 3 characters";
     setTimeout(() => {
-      error.innerHTML = " ";
+      nameError.innerHTML = " ";
     }, 4000);
     isValid = false;
+  } else {
+    nameError.innerHTML = "";
   }
+
   if (surnameValue.length < 3) {
-    error.innerHTML =
-      "Invalid surname or surname should be at least 3 characters";
+    surnameError.innerHTML = "Surname should be at least 3 characters";
     setTimeout(() => {
-      error.innerHTML = " ";
+      surnameError.innerHTML = " ";
     }, 4000);
     isValid = false;
+  } else {
+    surnameError.innerHTML = "";
   }
 
   if (!emailValue.includes("@")) {
-    error.innerHTML = "Invalid email";
+    emailError.innerHTML = "Invalid E-mail";
     setTimeout(() => {
-      error.innerHTML = " ";
+      emailError.innerHTML = " ";
     }, 4000);
     isValid = false;
+  } else {
+    emailError.innerHTML = "";
   }
 
-  if (phoneValue.length !== 10 || isNaN(phoneValue)) {
-    error.innerHTML = "Invalid phone number";
+  if (!regex.test(phoneValue)) {
+    phoneError.innerHTML = "Invalid phone number";
     setTimeout(() => {
-      error.innerHTML = " ";
+      phoneError.innerHTML = " ";
     }, 4000);
     isValid = false;
+  } else {
+    phoneError.innerHTML = "";
+  }
+
+  if (isValid) {
+    button.removeAttribute("disabled");
+  } else {
+    button.setAttribute("disabled", "disabled");
   }
 }
 
+name.addEventListener("input", validation);
+surname.addEventListener("input", validation);
+email.addEventListener("input", validation);
+phone.addEventListener("input", validation);
+
+function redirectToHomePage() {
+  setTimeout(() => {
+    window.location.href = "/index.html";
+  }, 5000);
+}
+
+function success() {
+  successMsg.innerHTML =
+    "Your application has been submitted successfully!!. After 5 sec you will redirected to the Home Page.";
+}
+
 button.addEventListener("click", validation);
+button.addEventListener("click", success);
