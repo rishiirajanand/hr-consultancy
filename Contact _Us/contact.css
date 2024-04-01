@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -148,6 +154,13 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+
+  /*-------------------------------------------responsive---------------------------------------------------*/
+
+
+  @media (max-width:1000px) {
   }
 
   
