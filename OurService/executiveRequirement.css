@@ -437,3 +437,12 @@ ul .box {
 .box .dropdown-content a:hover {
   color: #bdbcb9;
 }
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
