@@ -34,6 +34,7 @@ body{
     font-size: 22px;
     opacity: 70%;
     line-height: 2.3rem;
+    text-align: justify
 }
 
 .images-box h1{
@@ -75,4 +76,94 @@ body{
 .logo a img{
     width: 100%;
     
+}
+
+
+/*-----------------------------------------------------------Responsible-------------------------------------------------------------------*/
+@media (max-width:1000px) {
+    .heading-box p{
+        font-size: 20px;
+        opacity: 70%;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .main-container{
+        max-width: 700px;
+        margin: 10% 0px;
+        
+    }
+    .client-image{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px 10px;
+    
+    }
+}
+
+@media (max-width:850px) {
+    .heading-box p{
+        font-size: 18px;
+        opacity: 70%;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .main-container{
+        max-width: 600px;
+        margin: 10% 0px;
+        
+    }
+    .client-image{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px 9px;
+    
+    }
+}
+
+@media (max-width:700px) {
+    .heading-box p{
+        font-size: 18px;
+        opacity: 70%;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    .main-container{
+        max-width: 400px;
+        margin: 10% 0px;
+        
+    }
+    .client-image{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px 9px;
+    
+    }
+}
+
+@media (max-width:500px) {
+    .heading-box p{
+        font-size: 18px;
+        opacity: 70%;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+    .main-container{
+        max-width: 250px;
+        margin: 10% 0px;
+        
+    }
+    .client-image{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 9px;
+    
+    }
+    .heading-box h1{
+        font-size: 40px;
+        color: #00274A;
+        margin-bottom: 2rem;
+    }
+    .images-box h1{
+        font-size: 22px;
+    }
 }
