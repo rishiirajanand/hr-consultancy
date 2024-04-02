@@ -121,3 +121,49 @@ ul .box {
 .box .dropdown-content a:hover {
   color: #bdbcb9;
 }
+
+/* Hero */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  background-color: white;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 400%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-container i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2.5em;
+  color: white;
+  z-index: 2;
+}
+
+.prev {
+  left: 0;
+  margin-left: 100px;
+}
+
+.next {
+  right: 0;
+  background-color: transparent;
+  font-size: 1rem;
+  margin-right: 100px;
+}
