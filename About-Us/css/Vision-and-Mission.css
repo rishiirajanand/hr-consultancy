@@ -45,3 +45,123 @@ body{
     text-align: justify
 }
 
+
+/*-----------------------------------------------------------------Responsive--------------------------------------------------------------------*/
+
+@media (max-width:1000px) {
+    .main-container{
+        max-width: 650px;
+        margin: 3.3% 0px; 
+    }
+
+    .heading-box h1{
+        font-size: 50px;
+        margin-bottom: 1.8rem;
+    }
+
+    .text-box h2{
+        margin-bottom: 1.8rem;
+        font-size: 32px;
+    }
+
+    .text-box p{
+        font-size: 18px;
+        opacity: 70%;
+        line-height: 2rem;
+    }
+}
+
+
+@media (max-width:800px) {
+    .main-container{
+        max-width: 600px;
+        margin: 3.1% 0px; 
+    }
+
+    .heading-box h1{
+        font-size: 45px;
+        margin-bottom: 1.5rem;
+    }
+
+    .text-box h2{
+        margin-bottom: 1.5rem;
+        font-size: 28px;
+    }
+
+    .text-box p{
+        font-size: 16px;
+        opacity: 70%;
+        line-height: 1.8rem;
+    }
+}
+
+@media (max-width:700px) {
+    .main-container{
+        max-width: 500px;
+        margin: 3% 0px; 
+    }
+
+    .heading-box h1{
+        font-size: 40px;
+        margin-bottom: 1.3rem;
+    }
+
+    .text-box h2{
+        margin-bottom: 1.3rem;
+        font-size: 25px;
+    }
+
+    .text-box p{
+        font-size: 15px;
+        opacity: 70%;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .main-container{
+        max-width: 380px;
+        margin: 2.5% 0px; 
+    }
+
+    .heading-box h1{
+        font-size: 35px;
+        margin-bottom: 1.1rem;
+    }
+
+    .text-box h2{
+        margin-bottom: 1.1rem;
+        font-size: 22px;
+    }
+
+    .text-box p{
+        font-size: 14px;
+        opacity: 70%;
+        line-height: 1.3rem;
+    }
+}
+
+@media (max-width:450px) {
+    .main-container{
+        max-width: 300px;
+        margin: 2.2% 0px; 
+    }
+
+    .heading-box h1{
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+
+    .text-box h2{
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    .text-box p{
+        font-size: 12px;
+        opacity: 70%;
+        line-height: 1.1rem;
+    }
+}
+
+
