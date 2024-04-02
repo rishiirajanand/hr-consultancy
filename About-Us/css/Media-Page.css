@@ -26,6 +26,7 @@ body{
     text-align: left;
 }
 .heading-box h1{
+    text-align: center;
     font-size: 60px;
     color: #00274A;
     margin-bottom: 2rem;
@@ -98,3 +99,193 @@ iframe{
 }
 
 
+
+/*-----------------------------------------------------Responsive-------------------------------------------------------------*/
+
+@media (max-width:1000px) {
+    .main-container{
+        max-width: 600px;
+        margin: 2% 0px;
+        
+    }
+
+    iframe{
+        width: 100%;
+        height: 320px;
+        margin-bottom: 2rem;
+    }
+
+    .heading-box h1{
+        font-size: 40px;
+        margin-bottom: 2rem;
+    }
+
+    .heading-box p{
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+
+    .press-news h1{
+        font-size: 24px;
+    }
+
+    .news-box a{
+        font-size: 14px;
+    }
+
+    .news-box{
+        margin: 1rem 0px;
+    }
+
+    .archive-btn sapn{
+        font-size: 0.8rem;
+    }
+
+    .archive-btn{
+        width: 120px;
+        height: 50px;
+    }
+}
+
+@media (max-width:750px) {
+    .main-container{
+        max-width: 450px;
+        margin: 1.5% 0px;
+        
+    }
+
+    iframe{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 1.8rem;
+    }
+
+    .heading-box h1{
+        font-size: 35px;
+        margin-bottom: 1.8rem;
+    }
+
+    .heading-box p{
+        font-size: 16px;
+        margin-bottom: 1.8rem;
+    }
+
+    .press-news h1{
+        font-size: 22px;
+    }
+
+    .news-box a{
+        font-size: 12px;
+    }
+
+    .news-box{
+        margin: 0.8rem 0px;
+    }
+
+    .archive-btn sapn{
+        font-size: 0.8rem;
+    }
+
+    .archive-btn{
+        width: 120px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width:550px) {
+    .main-container{
+        max-width: 350px;
+        margin: 1.2% 0px;
+        
+    }
+
+    iframe{
+        width: 100%;
+        height: 190px;
+        margin-bottom: 1.5rem;
+    }
+
+    .heading-box h1{
+        font-size: 32px;
+        margin-bottom: 1.5rem;
+    }
+
+    .heading-box p{
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+    }
+
+    .press-news h1{
+        font-size: 20px;
+    }
+
+    .news-box a{
+        font-size: 10px;
+    }
+
+    .news-box{
+        margin: 0.6rem 0px;
+    }
+
+    .archive-btn sapn{
+        font-size: 0.7rem;
+    }
+
+    .archive-btn{
+        width: 100px;
+        height: 30px;
+    }
+    .press-news span{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .main-container{
+        max-width: 300px;
+        margin: 1% 0px;
+        
+    }
+
+    iframe{
+        width: 100%;
+        height: 160px;
+        margin-bottom: 1.2rem;
+    }
+
+    .heading-box h1{
+        font-size: 28px;
+        margin-bottom: 1.2rem;
+    }
+
+    .heading-box p{
+        font-size: 12px;
+        margin-bottom: 1.2rem;
+    }
+
+    .press-news h1{
+        font-size: 18px;
+    }
+
+    .news-box a{
+        font-size: 9px;
+    }
+
+    .news-box{
+        margin: 0.5rem 0px;
+    }
+
+    .archive-btn sapn{
+        font-size: 0.7rem;
+    }
+
+    .archive-btn{
+        width: 100px;
+        height: 30px;
+    }
+    .press-news span{
+        font-size: 8px;
+    }
+}
