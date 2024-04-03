@@ -1,0 +1,55 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    margin: 5em auto ;
+}
+#assessment-coaching{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+
+}
+.assessment-coaching{
+    letter-spacing: -0.05em;
+    font-size: 4.1875em;
+    line-height: 1.07462686567164em;
+    margin: 0;
+    margin-bottom: 0.71641791044776em;
+    font-weight:bold;
+    color: #00274a;
+    max-width: 800px;
+    font-family: "Montserrat", "Arial", sans-serif
+}
+
+.selection-assessment-head,.career-coaching-outplacement-head,.services-in-head{
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 2em;
+    line-height: 1.71429em;
+}
+
+.selection-assessment-list,.services-in-list{
+    display: block;
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.selection-assessment-para,.selection-assessment-list,.career-coaching-outplacement-para,.services-in-list{
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    padding: 10px 0;
+    font-size: inherit;
+    opacity: 0.92;
+}
+.selection-assessment-list,.career-coaching-outplacement-para,.services-in-list{
+    padding-bottom: 3em;
+}
+.first-img,.second-img{
+    max-width: 40%;
+    float: right;
+    margin: 15px 0 10px 15px;
+}
+img{
+    width: 75%;
+}
