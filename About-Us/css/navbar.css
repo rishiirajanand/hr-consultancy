@@ -6,14 +6,12 @@
   font-family: "Poppins", sans-serif;
 }
 /* Navbar */
-
 nav {
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 5px;
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #f8f7f4;
   text-align: center;
@@ -22,6 +20,7 @@ nav {
 }
 
 nav img {
+  margin-top: 10px;
   height: 50px;
   width: 100px;
   object-fit: cover;
@@ -57,9 +56,10 @@ nav img {
 }
 
 .nav-content ul li a {
+  line-height: 1.2rem;
   text-decoration: none;
   color: #002750;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   padding-right: 10px;
   display: flex;
@@ -122,48 +122,103 @@ ul .box {
   color: #bdbcb9;
 }
 
-/* Hero */
-.carousel-container {
-  position: relative;
-  overflow: hidden;
+
+/*----------------------------------------------------2nd nav-----------------------------------------------------*/
+.nav1{
   width: 100%;
-  max-width: 100%;
-  height: 600px;
-  background-color: white;
+  height: 80px;
+  background-color:#f8f7f4;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
 }
 
-.carousel-slide {
-  display: flex;
-  width: 400%;
-  transition: transform 0.5s ease;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
+.nav1 img {
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
   object-fit: cover;
 }
 
-.carousel-container i {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  outline: none;
+.nav1 ul{
+  display: none;
+  list-style: none;
+}
+
+
+.nav1 ul li{
+  margin: 0 5px;
+}
+
+.nav1 ul li a{
+  color: rgb(42, 46, 45);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.nav1 .menu-btn{
+  font-size: 22px;
   cursor: pointer;
-  font-size: 2.5em;
-  color: white;
-  z-index: 2;
+  display: none;
 }
 
-.prev {
-  left: 0;
-  margin-left: 100px;
+#click{
+  display: none;
 }
+/*--------------------------------------------------------Navbar Responsive--------------------------------------------------------------*/
 
-.next {
-  right: 0;
-  background-color: transparent;
-  font-size: 1rem;
-  margin-right: 100px;
+
+@media (max-width: 1450px) {
+  nav{
+    display: none;
+  }
+  .nav1{
+    display: flex;
+  }
+  .nav1 .menu-btn{
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+
+  .nav1 ul{
+    position:absolute;
+    top: 80px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ ul{
+    left: 0%;
+  }
+
+  .nav1 ul li{
+    background: white;
+    margin: 0px 0;
+    padding-top: 10px;
+
+  }
+  
+  .nav1 ul li a{
+    background: white;
+    display: block;
+    padding: 0 0 0 0;
+  }
+  .dropdown p{
+    padding: 10px 0;
+    color: white;
+    background: rgb(77, 77, 214);
+  }
 }
