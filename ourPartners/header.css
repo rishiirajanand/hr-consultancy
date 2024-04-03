@@ -6,7 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 /* Navbar */
-
 nav {
   padding-right: 15px;
   padding-left: 15px;
@@ -18,7 +17,7 @@ nav {
   background-color: #f8f7f4;
   text-align: center;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 nav img {
@@ -51,9 +50,6 @@ nav img {
 
 .nav-content ul li {
   position: relative;
-  display: inline-block;
-  height: 100%;
-  padding-top: 25px;
 }
 
 .nav-content ul li a {
@@ -64,6 +60,7 @@ nav img {
   padding-right: 10px;
   display: flex;
   flex-wrap: nowrap;
+  height: 100%;
   width: 100%;
   justify-content: center;
 }
@@ -71,17 +68,16 @@ nav img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0%;
+  bottom: -20px;
   width: 100%;
   height: 7px;
   background-color: #0057b0;
 }
-
 .nav-content ul li:hover::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0%;
+  bottom: -20px;
   width: 100%;
   height: 7px;
   background-color: #0057b0;
@@ -101,69 +97,24 @@ ul .box {
 }
 
 .dropdown-content {
+  /* padding-top: 100px; */
   display: none;
   position: fixed;
   background-color: #0057b0;
-  z-index: 1;
-  top: 70px;
+  z-index: 10;
+  top: 65px;
   width: 100vw;
   height: 45px;
   left: 0px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .box .dropdown-content a {
-  padding: 5px;
+  padding-top: 10px;
   color: #f8f7f4;
 }
 
 .box .dropdown-content a:hover {
   color: #bdbcb9;
-}
-
-/* Hero */
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  height: 600px;
-  background-color: white;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 400%;
-  transition: transform 0.5s ease;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-container i {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 2.5em;
-  color: white;
-  z-index: 2;
-}
-
-.prev {
-  left: 0;
-  margin-left: 100px;
-}
-
-.next {
-  right: 0;
-  background-color: transparent;
-  font-size: 1rem;
-  margin-right: 100px;
 }
