@@ -431,13 +431,15 @@ footer{
     padding: 80px 0;
 
 }
-.foot-last-text{
+.foot-last-text {
     width: 30%;
     text-align: center;
     color: white;
     /* border: 1px solid red; */
 }
-
+.foot-last-text p{
+    text-align: center;
+}
 .foot-last-text a{
     text-decoration: none;
     color: #C9A088;
