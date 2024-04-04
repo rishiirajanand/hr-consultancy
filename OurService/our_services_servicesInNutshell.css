@@ -306,7 +306,7 @@ link[rel="icon"] {
 }
 .onecol h1:hover{
 color: red;
-=======
+}
 
 /* nav */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
@@ -429,4 +429,14 @@ ul .box {
 
 .box .dropdown-content a:hover {
   color: #bdbcb9;
+}
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
