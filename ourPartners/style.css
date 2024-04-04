@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 128px;
+    overflow: hidden;
+}
+.subcontainer{
+    height: 100%;
+    width: 100%;
+}
+.title-page{
+    height: 144px;
+    width: 800px;
+    color: #00274A;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 67px;
+    margin: 0 0 48px;
+    line-height: 1.07462686567164em;
+    letter-spacing: -0.05em;
+}
+.title-main{
+    color: #00274A;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 67px;
+    margin: 0 0 48px;
+    line-height: 1.07462686567164em;
+    letter-spacing: -0.05em;
+}
+.subcontainer .sub_heading{
+    font-size: 38px;
+    color: #00274A;
+    letter-spacing: -0.05em;
+    line-height: 1.07462686567164em;
+    font-weight: 700;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+.subcontainer .sub_head{
+    font-size: 21px;
+    margin: 30px 28px 0;
+    font-weight: 500;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    color: #222222;
+}
+.subcontainer p{
+    font-size: 21px;
+    margin: 30px 0 0;
+    font-weight: 500;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    color: #222222;
+    /* font-style: inherit; */
+}
+.subcontainer video{
+    height: 300px;
+    width: 100%;
+    margin: 30px 0 0;
+    object-fit: cover;
+}
+.subcontainer ul li{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    color: #222222;
+}
+.bottom-img img{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+iframe{
+    margin: 30px 0 0;
+}
+.fig_img{
+    margin-left: 25%;
+}
+.fig_img img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 64px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 32px; 
+    }
+}

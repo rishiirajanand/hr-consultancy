@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="submenu-page">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HR Consultancy</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="mimatik.com and s-cape.cz" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="DigitalHRSolutions.css" />
+
+    <title>Digital HR Solutions</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <title>HR Consultancy</title>
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- Navbar -->
+  <body class="">
     <nav>
       <img
         src="data:image/png;base64,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"
         alt="logo"
       />
+
       <div class="nav-content">
         <ul>
           <li class="active box">
@@ -97,32 +103,70 @@
         </ul>
       </div>
     </nav>
+    <div class="container onecol">
+      <h1
+        style="
+          overflow: hidden;
+          border-right: 2px solid #00274a;
+          white-space: nowrap;
+          animation: typewriter 8s steps(40) infinite alternate;
+          width: 450px;
+        "
+      >
+        Digital HR Solutions
+      </h1>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="carousel-container">
-        <div class="carousel-slide">
-          <img
-            src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Image 1"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Image 2"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Image 3"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Image 4"
-          />
+      <div class="text article-big-text">
+        <h3>
+          <span style="font-size: 16.799999237060547px; color: #00274a"
+            >Smart HR Solutions</span
+          >
+        </h3>
+        <div class="medium-insert-images medium-insert-images-right"></div>
+        <p class="">
+          <span style="font-size: 16.799999237060547px"
+            >How to increase staff productivity?<br /><br />
+            We support Organizations in the development and achieving of their
+            goals on both strategic and operational level. <br /><br />Our team
+            will support you in finding the appropriate solution for your
+            employees and potential candidates. <br /><br />We use solution for
+            your Employer Branding, Recruitment, Employees' Engagement, Learning
+            & Development, Performance Framework Design & Management as well as
+            Objectives & Key Results (OKRs).</span
+          >
+          <br />
+        </p>
+        <p></p>
+
+        <h3 style="color: #00274a; white-space: nowrap">
+          Managing Business Performance (OKRs)
+        </h3>
+        <div class="medium-insert-images medium-insert-images-right">
+          <figure>
+            <img
+              sizes="(min-width: 1015px) 400px, 40vw"
+              src="https://www.aspire-hr.com/media/cache/6a/60/6a607f5d8c98854f7f9d7cf31823bf83/aspire-hr-profit-partnership-flyer-v1.jpg"
+            />
+          </figure>
         </div>
-        <i onclick="prevSlide()" class="prev ri-arrow-left-s-line"></i>
-        <i onclick="nextSlide()" class="next ri-arrow-right-s-line"></i>
+
+        <p>
+          Aspire HR Consultants partnered with the US-based company Profit in
+          early 2020 in the area of Managing Business Performance.
+          <br /><br />This partnership compliments our product
+          services/portfolio to serve you as an HR one-stop shop. Together we
+          provide a comprehensive OKR design and management solution, defining
+          the Objectives & Key Results (OKRs) at every level of your
+          organization. This will help you not only to survive difficult and
+          challenging times but also to bloom and stay ahead of competition
+          today and the days to come. OKR approach has in one way or the other
+          enabled large companies like Google, Intel, Amazon, Linkedin, Adobe,
+          and many more to stay relevant and out-perform their competition time
+          and again. This OKR management solution is meant to define Objectives
+          & Key Results (OKRs) across your organization.
+        </p>
       </div>
-    </section>
+    </div>
     <!-- Footer -->
     <footer>
       <div class="foot-first-box">
@@ -209,7 +253,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>
