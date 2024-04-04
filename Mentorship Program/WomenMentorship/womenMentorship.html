@@ -1,20 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women Mentorship Program</title>
-    <link rel="stylesheet" href="../WomenMentorship/womenMentorship.css">
-    <link href="/home.css" rel="stylesheet">
-</head>
+    <title>Women Mentorship</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <link rel="stylesheet" href="../footer.css">
+
+    <link rel="stylesheet" href="womenMentorship.css">
+    <link rel="stylesheet" href="../navbar.css">
+</head>
 <body>
-    <!-- ---------------------------------Nav----------------------------------------------- -->
+
+    <!------------------------ NAVBAR ----------------------->
+    <nav class="nav1">
+      <div class="logo">
+        <img src="../Images/logo.jpg" alt="logo"/>
+      </div>
+      <input type="checkbox" name="" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a>
+          <div class="dropdown">
+            <a href=""><p>Our Clients</p></a>
+            <a href=""><p>Testimonials</p></a>
+            <a href=""><p>Women Board Placement</p></a>
+            <a href=""><p>Vision & Mission</p></a>
+            <a href=""><p>MediaPage</p></a>
+          </div>
+        </li>
+        <li><a href="#">Our Team</a>
+          <div class="dropdown">
+            <a href=""><p>Local Senior Team</p></a>
+            <a href=""><p>Global Team</p></a>
+            <a href=""><p>Africa Desk</p></a>
+            <a href=""><p>Our People in Africa</p></a>
+          </div>
+        </li>
+        <li><a href="#">Our Services</a>
+          <div class="dropdown">
+            <a href=""><p>Services - In a Nutshell</p></a>
+            <a href=""><p>Executive Recruitment</p></a>
+            <a href=""><p>HR Consultancy</p></a>
+            <a href=""><p>Assessment & Coaching</p></a>
+            <a href=""><p>Digital HR Solutions</p></a>
+          </div>
+        </li>
+        <li><a href="#">Our Partners</a>
+          <div class="dropdown">
+            <a href=""><p>CEB SHL Tool Management</p></a>
+            <a href=""><p>Profit OKRs</p></a>
+            <a href=""><p>RiseSmart</p></a>
+          </div>
+        </li>
+        <li><a href="#">Mentorship Program</a>
+          <div class="dropdown">
+            <a href=""><p>Women Mentorship Program</p></a>
+            <a href=""><p>Application Form</p></a>
+          </div>
+        </li>
+        <li><a href="#">Insights Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    
     <nav>
-        <img src="data:image/png;base64,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"
-            alt="logo" style="margin-top: 40px;" />
+        <img
+          src="../Images/logo.jpg"
+          alt="logo"
+        />
         <div class="nav-content">
+
+          <ul>
+            <li class="active box">
+              <a href="#" onclick="setActive(this)">Home</a>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">About Us</a>
+              <div class="dropdown-content">
+                <a href="#">Our Clients</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Women Board Placement</a>
+                <a href="#">Vision & Mission</a>
+                <a href="#">Media Page</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Our Team</a>
+              <div class="dropdown-content">
+                <a href="#">Local Senior Team</a>
+                <a href="#">Global Team</a>
+                <a href="#">Africa Desk</a>
+                <a href="#">Our People in Africa</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Our Services</a>
+              <div class="dropdown-content">
+                <a href="#">Services-In a Nutshell</a>
+                <a href="#">Executive Recruitment</a>
+                <a href="#">HR Consultancy</a>
+                <a href="#">Assessment & Coaching</a>
+                <a href="#">Digital HR Solutions</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Our Partners</a>
+              <div class="dropdown-content">
+                <a href="#">CEB SHL Tool Management</a>
+                <a href="#">Executive Recruitment</a>
+                <a href="#">HR Consultancy</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Mentorship Program</a>
+              <div class="dropdown-content">
+                <a href="#">Women Mentorship Program</a>
+                <a href="#">Application Form</a>
+              </div>
+            </li>
+            <li class="box">
+              <a href="#" onclick="setActive(this)">Insight Blog</a>
+            </li>
+            <li class="box">
+              <a href="#" onclick="setActive(this)">Contact Us</a>
+            </li>
+          </ul>
+
             <ul>
                 <li class="active box">
                     <a href="#" onclick="setActive(this)">Home</a>
@@ -72,6 +211,7 @@
                     <a href="#" onclick="setActive(this)">Contact Us</a>
                 </li>
             </ul>
+
         </div>
     </nav>
 
@@ -98,10 +238,10 @@
                 become a mentor please fill in this application:<a href="../ApplicationForm/applicationForm.html">
                     https://www.aspire-hr.com/en/Application-form/</a></p>
             <div>
-                <img src="../Images/womensMentoeship2.jpeg" alt="womens">
+                <img class="mentorimg" src="../Images/womensMentoeship2.jpeg" alt="womens">
             </div>
             <p class="paragraph">The women mentoring program that we are launching consists of five programs:</p>
-            <ul>
+            <ul id="ul1">
                 <li>Women on Board & Leadership positions</li>
                 <li>Entrepreneurship and Startups</li>
                 <li>Women Back to Work</li>
@@ -113,7 +253,7 @@
                 International Women's day on<em> March 15th, 2022.</em> We hosted this walk in The British University in
                 Egypt, this walk also took place in 60 other countries around the world!</p>
             <div>
-                <img src="../Images/womensMentoeship1.jpeg" alt="womens-group">
+                <img class="mentorimg" src="../Images/womensMentoeship1.jpeg" alt="womens-group">
             </div>
         </div>
     </div>
@@ -122,26 +262,26 @@
     <footer>
         <div class="foot-first-box">
             <div class="foot-box-1">
-                <hr style="opacity: 10%;" />
+                <hr style="opacity: 10%;"/>
                 <div class="foot-main-box">
                     <div class="foot-link-box">
                         <div class="foot-links">
                             <h4><a href="/index.html">Home</a></h4>
                             <div>
                                 <!-- <li><a href="#">Our Clients</a></li> -->
-
-                            </div>
-                        </div>
+                                
+                            </div>  
+                        </div>  
                         <div class="foot-links">
-                            <h4><a href="/About-Us/pages/our-clients.html">About Us</a></h4>
+                            <h4><a href="#">About Us</a></h4>
                             <div>
-                                <li><a href="/About-Us/pages/our-clients.html">Our Clients</a></li>
-                                <li><a href="/About-Us/pages/Testimonials.html">Testimonials</a></li>
-                                <li><a href="/About-Us/pages/Women-Board-Placement.html">Women Board Placement</a></li>
-                                <li><a href="/About-Us/pages/Vision-and-Mission.html">Vision & Mission</a></li>
-                                <li><a href="/About-Us/pages/Media-Page.html">Media Page</a></li>
+                                <li><a href="#">Our Clients</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Women Board Placement</a></li>
+                                <li><a href="#">Vision & Mission</a></li>
+                                <li><a href="#">Media Page</a></li>
                             </div>
-                        </div>
+                        </div>  
                         <div class="foot-links">
                             <h4><a href="/vivek-outTeam/LocalSeniorTeam.html">Our Team</a></h4>
                             <div>
@@ -149,9 +289,9 @@
                                 <li><a href="#">Global Team</a></li>
                                 <li><a href="#">Africa Desk</a></li>
                                 <li><a href="#">Our People in Africa</a></li>
-                            </div>
-
-                        </div>
+                            </div>  
+                        
+                        </div>  
                         <div class="foot-links">
                             <h4><a href="/OurService/our_services_servicesInNutshell.html">Our Services</a></h4>
                             <div>
@@ -161,43 +301,40 @@
                                 <li><a href="/OurService/HRConsultancy.html">HR Consultancy</a></li>
                                 <li><a href="/OurService/Assessment&Coaching.html">Assessment & Coaching</a></li>
                                 <li><a href="#">Digital HR Solutions</a></li>
-                            </div>
-                        </div>
+                            </div>  
+                        </div>  
                     </div>
                     <div class="foot-link-box">
                         <div class="foot-links">
-                            <h4><a href="/ourPartners/ourPartners.html">Our Partners</a></h4>
+                            <h4><a href="#">Our Partners</a></h4>
                             <div>
-                                <li><a href="/ourPartners/ourPartners.html">CEB SHL Tool Management</a></li>
-                                <li><a href="/ourPartners/profitOKRs.html">Profit OKRs</a></li>
-                                <li><a href="/ourPartners/riseSmart.html">RiseSmart</a></li>
-                            </div>
-                        </div>
+                                <li><a href="#">CEB SHL Tool Management</a></li>
+                                <li><a href="#">Profit OKRs</a></li>
+                                <li><a href="#">RiseSmart</a></li>
+                            </div>  
+                        </div>  
                         <div class="foot-links">
-                            <h4><a href="/Mentorship Program/WomenMentorship/womenMentorship.html">Mentorship
-                                    Program</a></h4>
+                            <h4><a href="#">Mentorship Program</a></h4>
                             <div>
-                                <li><a href="/Mentorship Program/WomenMentorship/womenMentorship.html">Women Mentorship
-                                        Program</a></li>
-                                <li><a href="/Mentorship Program/ApplicationForm/applicationForm.html">Application
-                                        Form</a></li>
+                                <li><a href="#">Women Mentorship Program</a></li>
+                                <li><a href="#">Application Form</a></li>
                             </div>
-
-
-                        </div>
+                            
+        
+                        </div>  
                         <div class="foot-links">
                             <h4><a href="/vivek-outTeam/LocalSeniorTeam.html">Our Team</a></h4>
                             <div>
                                 <!-- <li><a href="#">Local Senior Team</a></li> -->
-                            </div>
-
-                        </div>
+                            </div>  
+                        
+                        </div>  
                         <div class="foot-links">
                             <h4><a href="/OurService/our_services_servicesInNutshell.html">Our Services</a></h4>
                             <div>
                                 <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
-                            </div>
-                        </div>
+                            </div>  
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -210,7 +347,6 @@
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="../navbar.js"></script>
 </body>
-
 </html>
