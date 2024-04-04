@@ -36,7 +36,7 @@ body {
     text-align: left;
     color: #00274a;
     margin-bottom: 20px;
-    font-size: 31px;
+    font-size: 60px;
     font-family:Arial, sans-serif;
   }
 
@@ -44,7 +44,7 @@ body {
     text-align: left;
     color: #00274a;
     margin-bottom: 12px;
-    font-size: 23px;
+    font-size: 40px;
     
 }
 
@@ -53,10 +53,16 @@ span{
     font-size: 13px;
     background: #f6f4f1;
     padding: 0px 6.5px 0px 0px;
+    margin-bottom: 20px;
 
 }
 
-.contact-info {
+.contact-info2 span{
+  margin-bottom: 12px;
+  
+}
+
+.info {
     color: #222222;
     font-size: 16px;
     background: #f6f4f1;
@@ -71,7 +77,10 @@ span{
     background: #f6f4f1;
     margin: 0px 0px 24px;
     padding: 24px 30px;
+}
 
+.contact-info1 p{
+  margin-bottom: 10px;
 }
 
   .location {
@@ -147,7 +156,14 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-right: 130px;
+
+  }
+
+  h3{
+    font-size: 25px;
+    margin-bottom: 15px;
   }
 
   #icons{
@@ -156,11 +172,38 @@ span{
     justify-content: space-between;
   }
 
+  .map{
+    width: 600px;
+    height: 450px;
+  }
+
 
   /*-------------------------------------------responsive---------------------------------------------------*/
 
-
-  @media (max-width:1000px) {
+  @media (max-width: 950px) {
+    h1{
+      font-size: 45px;
+    }
   }
-
   
+  @media (max-width: 900px) {
+    h2{
+      font-size: 30px;
+    }
+    .map{
+      display: none;
+    }
+    .container{
+      margin-left: 70px;
+      margin-right: 30px;
+      width: 80%;
+    }
+    .info .contact-info1{
+      height: 400px;
+      width: 600px;
+    }
+    .contact-form{
+      margin-left: 80px;
+      width: 800px; 
+    }
+  }

@@ -23,49 +23,46 @@ function toggleDropdown(element, isHovering) {
 }
 
 // Hero Carousel
-let slideIndex = 1; // Start from 1 to skip the cloned first image
-const slides = document.querySelectorAll(".carousel-slide img");
-const totalSlides = slides.length;
-const slideWidth = slides[0].clientWidth; // Get the width of a single slide
-const carouselSlide = document.querySelector(".carousel-slide");
+let list = document.querySelector(".slider .list");
+let items = document.querySelectorAll(".slider .list .item");
+let dots = document.querySelectorAll(".slider .dots li");
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
 
-carouselSlide.style.transform = `translateX(${-slideIndex * slideWidth}px)`; // Initial positioning
+let active = 0;
+let lengthItems = items.length - 1;
 
-function showSlide(index) {
-  const offset = -index * slideWidth;
-  carouselSlide.style.transition = "transform 0.5s ease"; // Add transition
-  carouselSlide.style.transform = `translateX(${offset}px)`;
-}
-
-function nextSlide() {
-  if (slideIndex >= totalSlides - 1) {
-    slideIndex = 0;
-    setTimeout(() => {
-      carouselSlide.style.transition = "none"; // Remove transition to instantly jump back to the first slide
-      carouselSlide.style.transform = `translateX(${
-        -slideIndex * slideWidth
-      }px)`;
-    }, 500); // Wait for the transition to complete before resetting
+next.onclick = function () {
+  if (active + 1 > lengthItems) {
+    active = 0;
   } else {
-    slideIndex++;
-    showSlide(slideIndex);
+    active = active + 1;
   }
-}
-
-function prevSlide() {
-  if (slideIndex <= 0) {
-    slideIndex = totalSlides - 1;
-    setTimeout(() => {
-      carouselSlide.style.transition = "none"; // Remove transition to instantly jump back to the last slide
-      carouselSlide.style.transform = `translateX(${
-        -slideIndex * slideWidth
-      }px)`;
-    }, 500); // Wait for the transition to complete before resetting
+  reloadSlider();
+};
+prev.onclick = function () {
+  if (active - 1 < 0) {
+    active = lengthItems;
   } else {
-    slideIndex--;
-    showSlide(slideIndex);
+    active = active - 1;
   }
+  reloadSlider();
+};
+let refreshSlider = setInterval(() => {
+  next.click();
+}, 4000);
+function reloadSlider() {
+  let checkLeft = items[active].offsetLeft;
+  list.style.left = -checkLeft + "px";
+
+  let lastActiveDot = document.querySelector(".slider .dots li.active");
+  lastActiveDot.classList.remove("active");
+  dots[active].classList.add("active");
 }
 
-// Automatically change slide every 4 seconds
-setInterval(nextSlide, 4000);
+dots.forEach((li, key) => {
+  li.addEventListener("click", function () {
+    active = key;
+    reloadSlider();
+  });
+});
