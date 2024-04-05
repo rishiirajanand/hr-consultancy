@@ -25,6 +25,7 @@ footer{
     width: 80%;
     margin: 4rem 0px;
 }
+
 .foot-main-box{
     width: 100%;
     display: flex;
@@ -59,7 +60,6 @@ footer{
     margin-right: 5px;
     position: relative;
     bottom: 4px;
-    color: white;
 }
 .foot-links a{
     text-decoration: none;

@@ -66,3 +66,24 @@ dots.forEach((li, key) => {
     reloadSlider();
   });
 });
+
+// Cards
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    cards.forEach((otherCard) => {
+      if (otherCard !== card) {
+        otherCard.style.opacity = "0.5";
+      }
+    });
+  });
+
+  card.addEventListener("mouseout", () => {
+    cards.forEach((otherCard) => {
+      if (otherCard !== card) {
+        otherCard.style.opacity = "1";
+      }
+    });
+  });
+});

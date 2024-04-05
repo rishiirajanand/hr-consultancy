@@ -56,7 +56,7 @@ iframe{
     width: 100%;
     margin-top: 3rem;
 }
-HEAD
+/* HEAD
 :root {
     --glow-hue: 222deg;
     --shadow-hue: 180deg;
@@ -116,7 +116,7 @@ button {
         #ffc4ec -10%,
         #efdbfd 50%,
         #ffedd6 110%
-    ); */
+    ); 
     background-color: transparent;
     padding: .8em 1.4em;
     position: relative;
@@ -209,7 +209,7 @@ button .text {
 button:hover .text,
 button.active .text {
     animation: text .66s ease-in 1 both;
-}
+} */
 
 /* body,
 html {
@@ -235,7 +235,7 @@ main#app {
     border-radius: 10px;
 }
 
-
+/* 
 .para{
 	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -274,10 +274,11 @@ bottom: 15px;
               transform-origin: 50% 50%;
       text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
-  }
+  } */
   .para{
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            font-size: 18px;
 }
 
  @-webkit-keyframes text-focus-in {
@@ -307,7 +308,7 @@ bottom: 15px;
   @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
 
 /* body,html{margin:0;padding:0;height:100%;} */
-.para1{
+/* .para1{
   background: #f1f1f1;
   background-size:cover;
   font-family: 'Cabin Condensed', sans-serif;
@@ -321,8 +322,18 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 
 .author-box{
     text-align: justify;
-}
+} */
 
+.h1{
+    font-size:50px;
+    line-height: 1.07462686567164em;
+    margin: 0;
+    margin-bottom: 0.71641791044776em;
+    font-weight: bold;
+    color: #00274a;
+    max-width: 800px;
+    word-spacing:10px;
+}
 
 /*----------------------------------------------------Responsible------------------------------------------------------------------*/
 @media (max-width:1000px) {
