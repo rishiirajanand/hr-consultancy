@@ -16,7 +16,7 @@
 
 .foot-first-box{
     width: 100%;
-    background-color: #F6F4F1;
+    background-color: #0062ab;
     display: flex;
     justify-content: center;
 }
@@ -62,7 +62,7 @@
 }
 .foot-links a{
     text-decoration: none;
-    color: #0062AB;
+    color: white;
 }
 .foot-links a:hover{
     color: #00274A;
