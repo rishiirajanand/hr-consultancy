@@ -61,7 +61,164 @@ body{
     opacity: 70%;
 }
 
+ /* Assuming you have defined the red color */
 
+ .btn-1 {
+    background-color:lightskyblue;
+    border: 2px solid white; /* Add border */
+    font-weight: 100;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 30px;
+    outline: none;
+    color:black;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.35s linear;
+    /* color: gray; */
+    padding: 0px 50px;
+    margin-top: 1rem;
+    opacity: 70%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  */
+    box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3), /* First layer of shadow */
+    0 0 30px rgba(0, 0, 0, 0.1), /* Second layer of shadow */
+    0 0 40px 10px rgba(0, 0, 0, 0.2); /* Third layer of shadow */
+
+
+    border-radius: 10px;
+  }
+  
+  .btn-1 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-1 rect {
+    fill: none;
+    stroke: black;
+    stroke-width: 0;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+    outline: transparent;
+    border:none;
+    background-color: #00274A;;
+   
+  }
+  
+  .btn-1:hover {
+    background-color:aqua;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: black;
+  }
+  
+  .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .btn-1:hover {
+    text-decoration: none;
+  }
+  .para {
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  */
+  }
+  
+  .para:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Super fantastic box shadow on hover */
+  }
+  .btn:link,
+  .btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative; /* Changed position to relative */
+  }
+  
+  .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .1s;
+  }
+  
+  .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+  
+  .btn-animated {
+      animation: moveInBottom 5s ease-out;
+      animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveInBottom {
+      0% {
+          opacity: 0.7;
+          transform: translateY(30px);
+          /* background-color: aqua; */
+          border-radius: 12px;
+          background-color: rgb(70, 88, 88);
+      }
+      25% {
+          background-color: rgb(45, 218, 218);
+          border-radius: 15px;
+      }
+      50% {
+          background-color: rgb(34, 212, 212);
+          border-radius: 18px;
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+          background-color: transparent;
+      }
+  }
+  
+  .h3 {
+      /* Additional styles for the header */
+      font-size: 24px;
+      margin-bottom: 20px;
+      /* Apply button styles */
+      display: inline-block;
+      position: relative;
+      margin-top: 50px;
+      /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); Applied shadow to the header */
+      border-radius: 20px;
+  }
+  
+  
 /*-----------------------------------------------------------Responsive--------------------------------------------------------------------*/
 @media (max-width:1000px) {
     .main-container{
