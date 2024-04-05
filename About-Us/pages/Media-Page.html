@@ -12,20 +12,21 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/Media-Page.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/animation.css">
 </head>
 <body>
 
     <!------------------------ NAVBAR ----------------------->
     <nav class="nav1">
       <div class="logo">
-        <img src="../images/logo.jpg" alt="logo"/>
+        <a href="/index.html"><img src="../images/logo.jpg" alt="logo"/></a>
       </div>
       <input type="checkbox" name="" id="click">
       <label for="click" class="menu-btn">
         <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="#">About Us</a>
           <div class="dropdown">
             <a href=""><p>Our Clients</p></a>
@@ -71,10 +72,7 @@
     </nav>
     
     <nav>
-        <img
-          src="../images/logo.jpg"
-          alt="logo"
-        />
+      <a href="/index.html"><img src="../images/logo.jpg" alt="logo"/></a>
         <div class="nav-content">
           <ul>
             <li class="active box">
@@ -159,27 +157,27 @@
     
     <div class="main-container">
         <div class="heading-box">
-            <h1>Our Vision & Mission</h1>
+            <h1 class="move">Our Vision & Mission</h1>
             <iframe width="750" height="414" src="https://www.youtube.com/embed/2APFt0Ya2e4" title="Aspire HR Consultants" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <p>
+            <p class="move">
                 Expanding from Egypt to the Gulf, Explore more about Aspire HR Consultants success story.
             </p>
-            <p>
+            <p class="move">
                 Find out more from <a href="#">Wamda Exclusive interview!</a>
             </p>
         </div>
         <hr style="opacity: 50%;"/>
         <div class="press-news">
-            <h1>Press News</h1>
+            <h1 class="move">Press News</h1>
             <div class="news-box">
-                <div class="left">
+                <div class="left move-text">
                     <p>
                         <a href="#">Kestria introduces a new Agribusiness & Agriscience Americas Practice Leader</a>
                     </p>
                     <span>March 12, 2024</span>
                 </div>
-                <div class="right">
+                <div class="right move-text-right">
                     <p>
                         <a href="#">Kestria announces new Agribusiness & Agriscience Practice Group members</a>
                     </p>
@@ -187,7 +185,7 @@
                 </div>
             </div>
             <a href="#" id="btn">
-                <p class="archive-btn">
+                <p class="archive-btn move-text">
                     <sapn>Archive</sapn>
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </p>
@@ -285,5 +283,6 @@
     </footer>
 
     <script src="../js/navbar.js"></script>
+    <script src="../js/animation.js"></script>
 </body>
 </html>

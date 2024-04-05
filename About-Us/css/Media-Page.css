@@ -26,7 +26,7 @@ body{
     text-align: left;
 }
 .heading-box h1{
-    text-align: center;
+    text-align: start;
     font-size: 60px;
     color: #00274A;
     margin-bottom: 2rem;
