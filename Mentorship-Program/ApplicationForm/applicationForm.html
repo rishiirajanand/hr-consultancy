@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="../footer.css">
+
+  <link rel="stylesheet" href="applicationForm.css">
+  <link rel="stylesheet" href="../navbar.css">
+</head>
+
+<body>
+
+  <!------------------------ NAVBAR ----------------------->
+  <nav>
+    <a href="/index.html"><img src="./About-Us/images/logo.jpg" alt="logo"/></a>
+    <div class="nav-content">
+      <ul>
+        <li class="active box">
+          <a href="#" onclick="setActive(this)">Home</a>
+        </li>
+        <li
+          class="box"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)"
+        >
+          <a href="./About-Us/pages/our-clients.html" onclick="setActive(this)">About Us</a>
+          <div class="dropdown-content">
+            <a href="./About-Us/pages/our-clients.html">Our Clients</a>
+            <a href="./About-Us/pages/Testimonials.html">Testimonials</a>
+            <a href="./About-Us/pages/Women-Board-Placement.html">Women Board Placement</a>
+            <a href="./About-Us/pages/Vision-and-Mission.html">Vision & Mission</a>
+            <a href="./About-Us/pages/Media-Page.html">Media Page</a>
+          </div>
+        </li>
+        <li
+          class="box"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)"
+        >
+          <a href="/Our-Team/LocalSeniorTeam.html" onclick="setActive(this)">Our Team</a>
+          <div class="dropdown-content">
+            <a href="/Our-Team/LocalSeniorTeam.html">Local Senior Team</a>
+            <a href="/Our-Team/globalTeam.html">Global Team</a>
+            <a href="/Our-Team/afrikaDesk.html">Africa Desk</a>
+            <a href="/Our-Team/ourPeopleInafrica.html">Our People in Africa</a>
+          </div>
+        </li>
+        <li
+          class="box"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)"
+        >
+          <a href="/Our-Service/our_services_servicesInNutshell.html" onclick="setActive(this)">Our Services</a>
+          <div class="dropdown-content">
+            <a href="/Our-Service/our_services_servicesInNutshell.html">Services-In a Nutshell</a>
+            <a href="/Our-Service/executiveRequirement.html">Executive Recruitment</a>
+            <a href="/Our-Service/HRConsultancy.html">HR Consultancy</a>
+            <a href="/Our-Service/Assessment&Coaching.html">Assessment & Coaching</a>
+            <a href="/Our-Service/DigitalHRSolutions.html">Digital HR Solutions</a>
+          </div>
+        </li>
+        <li
+          class="box"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)"
+        >
+          <a href="/Our-Partners/ourPartners.html" onclick="setActive(this)">Our Partners</a>
+          <div class="dropdown-content">
+            <a href="/Our-Partners/ourPartners.html">CEB SHL Tool Management</a>
+            <a href="/Our-Partners/profitOKRs.html">Profit OKRs</a>
+            <a href="/Our-Partners/riseSmart.html">RiseSmart</a>
+          </div>
+        </li>
+        <li
+          class="box"
+          onmouseover="toggleDropdown(this, true)"
+          onmouseout="toggleDropdown(this, false)"
+        >
+          <a href="/Mentorship-Program/WomenMentorship/womenMentorship.html" onclick="setActive(this)">Mentorship Program</a>
+          <div class="dropdown-content">
+            <a href="/Mentorship-Program/WomenMentorship/womenMentorship.html">Women Mentorship Program</a>
+            <a href="/Mentorship-Program/ApplicationForm/applicationForm.html">Application Form</a>
+          </div>
+        </li>
+        <li class="box">
+          <a href="#" onclick="setActive(this)">Insight Blog</a>
+        </li>
+        <li class="box">
+          <a href="/Contact-Us/contact.html" onclick="setActive(this)">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!------------------------------------- Application Form  ------------------------------------------------->
+  <main>
+    <p class="heading">Application Form</p>
+
+    <div class="parent">
+      <form>
+        <div class="container">
+          <div class="formGrp">
+            <label for="name">Name</label>
+            <input class="inp" type="text" id="name">
+            <p id="nameError" class="errorMsg"></p>
+          </div>
+          <div class="formGrp">
+            <label for="surname">Surname</label>
+            <input class="inp" type="text" id="surname">
+            <p id="surnameError" class="errorMsg"></p>
+          </div>
+          <div class="formGrp">
+            <label for="email">E-mail</label>
+            <input class="inp" type="email" id="email">
+            <p id="emailError" class="errorMsg"></p>
+          </div>
+          <div class="formGrp">
+            <label for="phone">Phone</label>
+            <input class="inp" type="tel" id="phone">
+            <p id="phoneError" class="errorMsg"></p>
+          </div>
+
+          <div class="formGrp">
+            <div>
+              <p class="fileText">Upload your company/personal profile (optional)</p>
+              <input class="file" type="file">
+            </div>
+
+          </div>
+
+          <div class="formGrp">
+            <p>Note</p>
+            <textarea rows="3" cols="30"></textarea>
+          </div>
+
+          <button id="btn" disabled onclick="redirectToHomePage()">Send</button>
+          <p id="successMsg"></p>
+        </div>
+      </form>
+      <div class="sideParagraph">
+        <p>If your company is interested in designing its own mentoring program or if you want to become a
+          mentor
+          please fill in this application.</p>
+      </div>
+    </div>
+  </main>
+
+  <!---------------------------------------------- Footer ------------------------------------------------------------>
+  <footer>
+    <div class="foot-first-box">
+      <div class="foot-box-1">
+        <hr style="opacity: 10%;" />
+        <div class="foot-main-box">
+          <div class="foot-link-box">
+            <div class="foot-links">
+              <h4><a href="/index.html">Home</a></h4>
+              <div>
+                <!-- <li><a href="#">Our Clients</a></li> -->
+
+              </div>
+            </div>
+            <div class="foot-links">
+              <h4><a href="/About-Us/pages/our-clients.html">About Us</a></h4>
+              <div>
+                <li><a href="/About-Us/pages/our-clients.html">Our Clients</a></li>
+                <li><a href="/About-Us/pages/Testimonials.html">Testimonials</a></li>
+                <li><a href="/About-Us/pages/Women-Board-Placement.html">Women Board Placement</a></li>
+                <li><a href="/About-Us/pages/Vision-and-Mission.html">Vision & Mission</a></li>
+                <li><a href="/About-Us/pages/Media-Page.html">Media Page</a></li>
+              </div>
+            </div>
+            <div class="foot-links">
+              <h4><a href="/Our-Team/LocalSeniorTeam.html">Our Team</a></h4>
+              <div>
+                <li><a href="/Our-Team/LocalSeniorTeam.html">Local Senior Team</a></li>
+                <li><a href="/Our-Team/globalTeam.html">Global Team</a></li>
+                <li><a href="/Our-Team/afrikaDesk.html">Africa Desk</a></li>
+                <li><a href="/Our-Team/ourPeopleInafrica.html">Our People in Africa</a></li>
+              </div>
+
+            </div>
+            <div class="foot-links">
+              <h4><a href="/Our-Service/our_services_servicesInNutshell.html">Our Services</a></h4>
+              <div>
+                <li><a href="/Our-Service/our_services_servicesInNutshell.html">Services - In a
+                    Nutshell</a></li>
+                <li><a href="/Our-Service/executiveRequirement.html">Executive Recruitment</a></li>
+                <li><a href="/Our-Service/HRConsultancy.html">HR Consultancy</a></li>
+                <li><a href="/Our-Service/Assessment&Coaching.html">Assessment & Coaching</a></li>
+                <li><a href="/Our-Service/DigitalHRSolutions.html">Digital HR Solutions</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="foot-link-box">
+            <div class="foot-links">
+              <h4><a href="/Our-Partners/ourPartners.html">Our Partners</a></h4>
+              <div>
+                <li><a href="/Our-Partners/ourPartners.html">CEB SHL Tool Management</a></li>
+                <li><a href="/Our-Partners/profitOKRs.html">Profit OKRs</a></li>
+                <li><a href="/Our-Partners/riseSmart.html">RiseSmart</a></li>
+              </div>
+            </div>
+            <div class="foot-links">
+              <h4><a href="/Mentorship-Program/WomenMentorship/womenMentorship.html">Mentorship Program</a></h4>
+              <div>
+                <li><a href="/Mentorship-Program/WomenMentorship/womenMentorship.html">Women Mentorship Program</a></li>
+                <li><a href="/Mentorship-Program/ApplicationForm/applicationForm.html">Application Form</a></li>
+              </div>
+
+
+            </div>
+            <div class="foot-links">
+              <h4><a href="/Our-Team/LocalSeniorTeam.html">Our Team</a></h4>
+              <div>
+                <!-- <li><a href="#">Local Senior Team</a></li> -->
+              </div>
+
+            </div>
+            <div class="foot-links">
+              <h4><a href="/Our-Service/our_services_servicesInNutshell.html">Our Services</a></h4>
+              <div>
+                <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-last-box">
+      <div class="foot-last-text">
+        <p class="last-text-head">Fluent in <i>finding</i> leaders</p>
+        <p class="last-text-link"><a href="#">WWW.KESTRIA.COM</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="applicationForm.js"></script>
+  <script src="../navbar.js"></script>
+</body>
+
+</html>

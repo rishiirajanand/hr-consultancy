@@ -14,15 +14,6 @@
     margin-top: -33px;
     padding-top: 50px;
 }
-
-main {
-    background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-        url("../Images/mentorshipBg2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*position: relative;*/ 
-}
 .parent {
     display: flex;
     justify-content: center;
@@ -46,10 +37,12 @@ main {
     font-size: 16px;
 }
 
-#formFileLg {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.file{
+    width: 267px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
 }
-
 label {
     display: flex;
     flex-direction: column;
@@ -111,7 +104,7 @@ button:disabled {
 .sideParagraph {
     width: 270px;
     font-size: 20px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 
@@ -317,6 +310,7 @@ footer {
     }
   }
   
+
 
   nav {
     padding-right: 15px;
