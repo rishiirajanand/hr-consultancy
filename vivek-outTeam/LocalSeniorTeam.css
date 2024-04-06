@@ -222,14 +222,6 @@ ul .box {
     font-weight: 700;
     
 }
-/* h1, h2 {
-    letter-spacing: .5px;
-    text-align: left;
-    margin-top: 30px;
-    font-size: 30px;
-    line-height: 1.26316em;
-    margin-bottom: 0.63158em;
-} */
 .text{
     max-width: 900px;
 }
@@ -247,7 +239,7 @@ p{
     font-size: 25px;
 }
 .consultant{
-    max-width: 980px;
+    max-width: 890px;
     display: flex;
     gap: 45px;
     margin: 0 auto 0;
@@ -259,7 +251,7 @@ p{
 
 .box img{
     border-radius: 50%;
-    width: 200px;
+    width: 2000px;
 }
 .box h3{
     text-align: center;
