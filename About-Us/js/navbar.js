@@ -21,3 +21,10 @@ function setActive(element) {
     const dropdownContent = element.querySelector(".dropdown-content");
     dropdownContent.style.display = isHovering ? "flex" : "none";
   }
+  document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("btn");
+    button.addEventListener("mouseover", function() {
+      button.classList.add("move");
+    });
+  });
+  
