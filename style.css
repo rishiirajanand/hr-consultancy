@@ -18,7 +18,7 @@ nav {
   background-color: #f8f7f4;
   text-align: center;
   position: relative;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 nav img {
@@ -197,7 +197,7 @@ ul .box {
 
 /* Banner 1 */
 .banner1 {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   height: 275px;
   background-color: #1d2031;
   display: flex;

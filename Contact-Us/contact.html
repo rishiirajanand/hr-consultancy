@@ -1,212 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- Font-Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="./animation/animation.css">
 </head>
+
 <body>
 
-    <!------------------------ NAVBAR ----------------------->
-    <nav class="nav1">
-      <div class="logo">
-        <img src="logo.jpg" alt="logo"/>
-      </div>
-      <input type="checkbox" name="" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a>
-          <div class="dropdown">
-            <a href=""><p>Our Clients</p></a>
-            <a href=""><p>Testimonials</p></a>
-            <a href=""><p>Women Board Placement</p></a>
-            <a href=""><p>Vision & Mission</p></a>
-            <a href=""><p>MediaPage</p></a>
-          </div>
-        </li>
-        <li><a href="#">Our Team</a>
-          <div class="dropdown">
-            <a href=""><p>Local Senior Team</p></a>
-            <a href=""><p>Global Team</p></a>
-            <a href=""><p>Africa Desk</p></a>
-            <a href=""><p>Our People in Africa</p></a>
-          </div>
-        </li>
-        <li><a href="#">Our Services</a>
-          <div class="dropdown">
-            <a href=""><p>Services - In a Nutshell</p></a>
-            <a href=""><p>Executive Recruitment</p></a>
-            <a href=""><p>HR Consultancy</p></a>
-            <a href=""><p>Assessment & Coaching</p></a>
-            <a href=""><p>Digital HR Solutions</p></a>
-          </div>
-        </li>
-        <li><a href="#">Our Partners</a>
-          <div class="dropdown">
-            <a href=""><p>CEB SHL Tool Management</p></a>
-            <a href=""><p>Profit OKRs</p></a>
-            <a href=""><p>RiseSmart</p></a>
-          </div>
-        </li>
-        <li><a href="#">Mentorship Program</a>
-          <div class="dropdown">
-            <a href=""><p>Women Mentorship Program</p></a>
-            <a href=""><p>Application Form</p></a>
-          </div>
-        </li>
-        <li><a href="#">Insights Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    
-    <nav>
-        <img
-          src="logo.jpg"
-          alt="logo"
-        />
-        <div class="nav-content">
-          <ul>
-            <li class="active box">
-              <a href="#" onclick="setActive(this)">Home</a>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="#" onclick="setActive(this)">About Us</a>
-              <div class="dropdown-content">
-                <a href="#">Our Clients</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Women Board Placement</a>
-                <a href="#">Vision & Mission</a>
-                <a href="#">Media Page</a>
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="#" onclick="setActive(this)">Our Team</a>
-              <div class="dropdown-content">
-                <a href="#">Local Senior Team</a>
-                <a href="#">Global Team</a>
-                <a href="#">Africa Desk</a>
-                <a href="#">Our People in Africa</a>
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="#" onclick="setActive(this)">Our Services</a>
-              <div class="dropdown-content">
-                <a href="#">Services-In a Nutshell</a>
-                <a href="#">Executive Recruitment</a>
-                <a href="#">HR Consultancy</a>
-                <a href="#">Assessment & Coaching</a>
-                <a href="#">Digital HR Solutions</a>
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="#" onclick="setActive(this)">Our Partners</a>
-              <div class="dropdown-content">
-                <a href="#">CEB SHL Tool Management</a>
-                <a href="#">Executive Recruitment</a>
-                <a href="#">HR Consultancy</a>
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="#" onclick="setActive(this)">Mentorship Program</a>
-              <div class="dropdown-content">
-                <a href="#">Women Mentorship Program</a>
-                <a href="#">Application Form</a>
-              </div>
-            </li>
-            <li class="box">
-              <a href="#" onclick="setActive(this)">Insight Blog</a>
-            </li>
-            <li class="box">
-              <a href="#" onclick="setActive(this)">Contact Us</a>
-            </li>
-          </ul>
+  <!------------------------ NAVBAR ----------------------->
+  <nav class="nav1">
+    <div class="logo">
+      <img src="logo.jpg" alt="logo" />
+    </div>
+    <input type="checkbox" name="" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a>
+        <div class="dropdown">
+          <a href="">
+            <p>Our Clients</p>
+          </a>
+          <a href="">
+            <p>Testimonials</p>
+          </a>
+          <a href="">
+            <p>Women Board Placement</p>
+          </a>
+          <a href="">
+            <p>Vision & Mission</p>
+          </a>
+          <a href="">
+            <p>MediaPage</p>
+          </a>
         </div>
-    </nav>
+      </li>
+      <li><a href="#">Our Team</a>
+        <div class="dropdown">
+          <a href="">
+            <p>Local Senior Team</p>
+          </a>
+          <a href="">
+            <p>Global Team</p>
+          </a>
+          <a href="">
+            <p>Africa Desk</p>
+          </a>
+          <a href="">
+            <p>Our People in Africa</p>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Our Services</a>
+        <div class="dropdown">
+          <a href="">
+            <p>Services - In a Nutshell</p>
+          </a>
+          <a href="">
+            <p>Executive Recruitment</p>
+          </a>
+          <a href="">
+            <p>HR Consultancy</p>
+          </a>
+          <a href="">
+            <p>Assessment & Coaching</p>
+          </a>
+          <a href="">
+            <p>Digital HR Solutions</p>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Our Partners</a>
+        <div class="dropdown">
+          <a href="">
+            <p>CEB SHL Tool Management</p>
+          </a>
+          <a href="">
+            <p>Profit OKRs</p>
+          </a>
+          <a href="">
+            <p>RiseSmart</p>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Mentorship Program</a>
+        <div class="dropdown">
+          <a href="">
+            <p>Women Mentorship Program</p>
+          </a>
+          <a href="">
+            <p>Application Form</p>
+          </a>
+        </div>
+      </li>
+      <li><a href="#">Insights Blog</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
 
-<!-- contact us -->
+  <nav>
+    <img src="logo.jpg" alt="logo" />
+    <div class="nav-content">
+      <ul>
+        <li class="active box">
+          <a href="#" onclick="setActive(this)">Home</a>
+        </li>
+        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
+          <a href="#" onclick="setActive(this)">About Us</a>
+          <div class="dropdown-content">
+            <a href="#">Our Clients</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Women Board Placement</a>
+            <a href="#">Vision & Mission</a>
+            <a href="#">Media Page</a>
+          </div>
+        </li>
+        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
+          <a href="#" onclick="setActive(this)">Our Team</a>
+          <div class="dropdown-content">
+            <a href="#">Local Senior Team</a>
+            <a href="#">Global Team</a>
+            <a href="#">Africa Desk</a>
+            <a href="#">Our People in Africa</a>
+          </div>
+        </li>
+        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
+          <a href="#" onclick="setActive(this)">Our Services</a>
+          <div class="dropdown-content">
+            <a href="#">Services-In a Nutshell</a>
+            <a href="#">Executive Recruitment</a>
+            <a href="#">HR Consultancy</a>
+            <a href="#">Assessment & Coaching</a>
+            <a href="#">Digital HR Solutions</a>
+          </div>
+        </li>
+        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
+          <a href="#" onclick="setActive(this)">Our Partners</a>
+          <div class="dropdown-content">
+            <a href="#">CEB SHL Tool Management</a>
+            <a href="#">Executive Recruitment</a>
+            <a href="#">HR Consultancy</a>
+          </div>
+        </li>
+        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
+          <a href="#" onclick="setActive(this)">Mentorship Program</a>
+          <div class="dropdown-content">
+            <a href="#">Women Mentorship Program</a>
+            <a href="#">Application Form</a>
+          </div>
+        </li>
+        <li class="box">
+          <a href="#" onclick="setActive(this)">Insight Blog</a>
+        </li>
+        <li class="box">
+          <a href="#" onclick="setActive(this)">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- contact us -->
   <div class="container">
 
-      <h1>Contact Us</h1>
-      <h2>Visit Our Offices</h2>
-       <div class="cont">
-        <div class="info">
-         <div class="location">
-         <h3>INDIA</h3>
-         </div>
-         <div class="location">
-         <h3>PUNE,WAKAD</h3>
-         </div>
-      <div class="contact-details">
-        <span>CONTACT</span>
-        <p>+91 1234567891</p>
-        <p>E-mail contact@india123</p>
-        <span>ADDRESS</span>
-        <address>
-            603, White Square, Hinjawadi - Wakad Rd, near Wakad, Pune, Maharashtra 411057
-        </address>
+    <h1>Contact Us</h1>
+    <h2>Visit Our Offices</h2>
+    <div class="cont">
+      <div class="info move-left">
+        <div class="location">
+          <h3>INDIA</h3>
+        </div>
+        <div class="location">
+          <h3>PUNE,WAKAD</h3>
+        </div>
+        <div class="contact-details">
+          <div class="contact-head">
+            <span>CONTACT</span>
+            <hr />
+          </div>
+          <div class="details-box">
+            <p>
+              <i class="fa-solid fa-phone-flip"></i>
+              <span>+91-1234567891</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <span>contact@gmail.com</span>
+            </p>
+          </div>
+          <div class="contact-head">
+            <span>ADDRESS</span>
+            <hr />
+          </div>
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              603, White Square, Hinjawadi - Wakad Rd, near Wakad, Pune, Maharashtra 411057
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="map move-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811420000!5m2!1sen!2sin"
+          width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
-         <div class="map">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811420000!5m2!1sen!2sin" width="600" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-       </div>
-    
-    <div class="cont1">
-      <div class="contact-info1">
+    <div class="cont">
+      <div class="info move-left">
         <div class="location">
-            <h3>INDIA</h3>
-          </div>
-          <div class="location">
-            <h3>PUNE,Hinjawadi</h3>
-          </div>
-          <div class="contact-details">
+          <h3>INDIA</h3>
+        </div>
+        <div class="location">
+          <h3>PUNE,HINJAWADI</h3>
+        </div>
+        <div class="contact-details">
+          <div class="contact-head">
             <span>CONTACT</span>
-            <p>+91 9876543219</p>
-            <p>E-mail contact@Hinjawadi</p>
-            <span>ADDRESS</span>
-            <address>
-                603, White Square, Hinjawadi - Wakad Rd, near Wakad, Pune, Maharashtra 411057
-            </address>
+            <hr />
           </div>
+          <div class="details-box">
+            <p>
+              <i class="fa-solid fa-phone-flip"></i>
+              <span>+91-9932111187</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <span>contact@gmail.com</span>
+            </p>
+          </div>
+          <div class="contact-head">
+            <span>ADDRESS</span>
+            <hr />
+          </div>
+          <div class="address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+              603, White Square, Hinjawadi - Wakad Rd, near Wakad, Pune, Maharashtra 411057
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="map move-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811420000!5m2!1sen!2sin"
+          width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
 
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811736019!5m2!1sen!2sin" width="600" height="430"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    </div>
-    
     <div class="cnt-form">
       <div class="contact-form">
         <form action="/submit" method="post">
@@ -223,113 +283,120 @@
           <input type="submit" value="Send">
         </form>
       </div>
-    
+
       <div class="contact info2">
-         <h3>Aspire HR Consultants</h3>
-         <span>CONTACT</span>
-         <P> PUNE: <a href="">+91 123456789</a></P>
-         <p> HINJAWADI : <a href=""> +91 9876543210</a></p>
-         <span>SOCIAL</span>
-            <div id="icons">
-              <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/12/6-layers-6.png" alt=""></a></p>
-              <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/12/3-layers-9.png" alt=""></a></p>
-              <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/12/image-41.png" alt=""></a></p>
-              <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/10/iconfinder_1_Youtube_colored_svg_5296521.png" alt=""></a></p>
+        <h3>Aspire HR Consultants</h3>
+        <span>CONTACT</span>
+        <P> PUNE: <a href="">+91 123456789</a></P>
+        <p> HINJAWADI : <a href=""> +91 9876543210</a></p>
+        <span>SOCIAL</span>
+        <div id="icons">
+          <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/12/6-layers-6.png"
+                alt=""></a></p>
+          <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/12/3-layers-9.png"
+                alt=""></a></p>
+          <p><a href=""><img src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/12/image-41.png"
+                alt=""></a></p>
+          <p><a href=""><img
+                src="https://eadn-wc01-6480865.nxedge.io/cdn/wp-content/uploads/2020/10/iconfinder_1_Youtube_colored_svg_5296521.png"
+                alt=""></a></p>
           <p><a href=""><img src="" alt=""></a></p>
-           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="foot-first-box">
-          <div class="foot-box-1">
-              <hr style="opacity: 10%;"/>
-              <div class="foot-main-box">
-                  <div class="foot-link-box">
-                      <div class="foot-links">
-                          <h4><a href="#">Home</a></h4>
-                          <div>
-                              <!-- <li><a href="#">Our Clients</a></li> -->
-                              
-                          </div>  
-                      </div>  
-                      <div class="foot-links">
-                          <h4><a href="#">About Us</a></h4>
-                          <div>
-                              <li><a href="#">Our Clients</a></li>
-                              <li><a href="#">Testimonials</a></li>
-                              <li><a href="#">Women Board Placement</a></li>
-                              <li><a href="#">Vision & Mission</a></li>
-                              <li><a href="#">Media Page</a></li>
-                          </div>
-                      </div>  
-                      <div class="foot-links">
-                          <h4><a href="#">Our Team</a></h4>
-                          <div>
-                              <li><a href="#">Local Senior Team</a></li>
-                              <li><a href="#">Global Team</a></li>
-                              <li><a href="#">Africa Desk</a></li>
-                              <li><a href="#">Our People in Africa</a></li>
-                          </div>  
-                      
-                      </div>  
-                      <div class="foot-links">
-                          <h4><a href="#">Our Services</a></h4>
-                          <div>
-                              <li><a href="#">Services - In a Nutshell</a></li>
-                              <li><a href="#">Executive Recruitment</a></li>
-                              <li><a href="#">HR Consultancy</a></li>
-                              <li><a href="#">Assessment & Coaching</a></li>
-                              <li><a href="#">Digital HR Solutions</a></li>
-                          </div>  
-                      </div>  
-                  </div>
-                  <div class="foot-link-box">
-                      <div class="foot-links">
-                          <h4><a href="#">Our Partners</a></h4>
-                          <div>
-                              <li><a href="#">CEB SHL Tool Management</a></li>
-                              <li><a href="#">Profit OKRs</a></li>
-                              <li><a href="#">RiseSmart</a></li>
-                          </div>  
-                      </div>  
-                      <div class="foot-links">
-                          <h4><a href="#">Mentorship Program</a></h4>
-                          <div>
-                              <li><a href="#">Women Mentorship Program</a></li>
-                              <li><a href="#">Application Form</a></li>
-                          </div>
-                          
-      
-                      </div>  
-                      <div class="foot-links">
-                          <h4><a href="#">Our Team</a></h4>
-                          <div>
-                              <!-- <li><a href="#">Local Senior Team</a></li> -->
-                          </div>  
-                      
-                      </div>  
-                      <div class="foot-links">
-                          <h4><a href="#">Our Services</a></h4>
-                          <div>
-                              <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
-                          </div>  
-                      </div> 
-                  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="foot-first-box">
+      <div class="foot-box-1">
+        <hr style="opacity: 10%;" />
+        <div class="foot-main-box">
+          <div class="foot-link-box">
+            <div class="foot-links">
+              <h4><a href="#">Home</a></h4>
+              <div>
+                <!-- <li><a href="#">Our Clients</a></li> -->
+
               </div>
+            </div>
+            <div class="foot-links">
+              <h4><a href="#">About Us</a></h4>
+              <div>
+                <li><a href="#">Our Clients</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Women Board Placement</a></li>
+                <li><a href="#">Vision & Mission</a></li>
+                <li><a href="#">Media Page</a></li>
+              </div>
+            </div>
+            <div class="foot-links">
+              <h4><a href="#">Our Team</a></h4>
+              <div>
+                <li><a href="#">Local Senior Team</a></li>
+                <li><a href="#">Global Team</a></li>
+                <li><a href="#">Africa Desk</a></li>
+                <li><a href="#">Our People in Africa</a></li>
+              </div>
+
+            </div>
+            <div class="foot-links">
+              <h4><a href="#">Our Services</a></h4>
+              <div>
+                <li><a href="#">Services - In a Nutshell</a></li>
+                <li><a href="#">Executive Recruitment</a></li>
+                <li><a href="#">HR Consultancy</a></li>
+                <li><a href="#">Assessment & Coaching</a></li>
+                <li><a href="#">Digital HR Solutions</a></li>
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="foot-last-box">
-          <div class="foot-last-text">
-              <p class="last-text-head">Fluent in <i>finding</i> leaders</p>
-              <p class="last-text-link"><a href="#">WWW.KESTRIA.COM</a></p>
+          <div class="foot-link-box">
+            <div class="foot-links">
+              <h4><a href="#">Our Partners</a></h4>
+              <div>
+                <li><a href="#">CEB SHL Tool Management</a></li>
+                <li><a href="#">Profit OKRs</a></li>
+                <li><a href="#">RiseSmart</a></li>
+              </div>
+            </div>
+            <div class="foot-links">
+              <h4><a href="#">Mentorship Program</a></h4>
+              <div>
+                <li><a href="#">Women Mentorship Program</a></li>
+                <li><a href="#">Application Form</a></li>
+              </div>
+
+
+            </div>
+            <div class="foot-links">
+              <h4><a href="#">Our Team</a></h4>
+              <div>
+                <!-- <li><a href="#">Local Senior Team</a></li> -->
+              </div>
+
+            </div>
+            <div class="foot-links">
+              <h4><a href="#">Our Services</a></h4>
+              <div>
+                <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
+              </div>
+            </div>
           </div>
+        </div>
       </div>
+    </div>
+    <div class="foot-last-box">
+      <div class="foot-last-text">
+        <p class="last-text-head">Fluent in <i>finding</i> leaders</p>
+        <p class="last-text-link"><a href="#">WWW.KESTRIA.COM</a></p>
+      </div>
+    </div>
   </footer>
 
   <script src="navbar.js"></script>
-<script src="contact.js"></script>
+  <script src="contact.js"></script>
+  <script src="./animation/animation.js"></script>
 </body>
+
 </html>
