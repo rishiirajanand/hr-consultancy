@@ -46,6 +46,184 @@ body{
 }
 
 
+/* .h1:hover{
+    color: red;
+} */
+.h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000; /* Change this to your preferred text color */
+  }
+
+  .h1::after {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(33, 33, 110); /* Change this to your preferred color */
+    transition: transform 0.5s ease;
+    transform-origin: left bottom;
+    transform: scaleX(0);
+  }
+
+  .h1:hover::after {
+    transform: scaleX(1);
+  }
+  .h1:hover{
+    color: rgb(58, 141, 141);
+  }
+  .container1 {
+    text-align: center; /* Center-align the content */
+    padding: 25px 0px;
+    background-color: #1D2031;
+    color: white;
+  }
+  
+  .span {
+    font-size: 40px;
+  }
+  
+  .waviy {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .waviy span {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+    font-size: 40px;
+  }
+  
+  @keyframes flip {
+    0%, 80% {
+      transform: rotateY(360deg);
+    }
+  }
+  /* $speed: 0.5s; */
+
+  .btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+  
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+  
+      &::before {
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+    }
+  
+    &::after {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color: #323237;
+      display: block;
+      /* transition: $speed; */
+      position: absolute;
+      background: #adadaf;
+      content: attr(data-back);
+      transform: translateY(-50%) rotateX(90deg);
+    }
+  
+    &::before {
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color: #adadaf;
+      display: block;
+      padding: 0 30px;
+      line-height: 40px;
+      /* transition: $speed; */
+      position: relative;
+      background: #323237;
+      content: attr(data-front);
+      transform: translateY(0) rotateX(0);
+    }
+  }
+  
+
+  /* $speed: 0.5s; */
+
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+
+    &::before {
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    /* transition: $speed; */
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    /* transition: $speed; */
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+}
+
 /*-----------------------------------------------------------------Responsive--------------------------------------------------------------------*/
 
 @media (max-width:1000px) {

@@ -56,6 +56,49 @@ iframe{
     width: 100%;
     margin-top: 3rem;
 }
+iframe {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.iframe-container {
+    width: 750px; /* Set the width of the iframe container */
+    height: 413px; /* Set the height of the iframe container */
+    position: relative; /* Positioning for the iframe and animated border */
+    overflow: hidden; /* Hide overflow to prevent border clipping */
+}
+
+.iframe {
+    width: 100%; /* Full width of the iframe */
+    height: 100%; /* Full height of the iframe */
+    border: 2px solid transparent; /* Initial transparent border */
+    transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+.iframe:hover {
+    border-color: transparent; /* Change to transparent to preserve iframe dimensions */
+    animation: changeColor 5s infinite; /* Apply color change animation */
+}
+
+@keyframes changeColor {
+    0% {
+       
+        border: 3px solid lightcyan;
+    }
+    25% {
+        border: 3px solid lightcoral;
+    }
+    50% {
+        border: 3px solid lightgreen;
+    }
+    75% {
+        border: 3px solid lightseagreen;
+    }
+    100% {
+        border: 3px solid red;
+    }
+}
+
 /* HEAD
 :root {
     --glow-hue: 222deg;
@@ -275,6 +318,9 @@ bottom: 15px;
       text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
     }
   } */
+  .h1:hover{
+color: red;
+  }
   .para{
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;

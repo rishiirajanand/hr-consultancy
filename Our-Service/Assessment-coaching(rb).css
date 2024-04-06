@@ -1,0 +1,82 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-family: "Noto Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #222;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    margin: 5em auto ;
+    padding: 5px;
+}
+
+.assessment-coaching{
+    letter-spacing: -0.05em;
+    font-size: 4.1875em;
+    line-height: 1.07462686567164em;
+    margin: 0;
+    margin-bottom: 0.71641791044776em;
+    font-weight:bold;
+    color: #00274a;
+    max-width: 800px;
+    font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.selection-assessment-head,.career-coaching-outplacement-head,.services-in-head{
+  font-size: 2.375em;
+  line-height: 1.26316em;
+  color: #00274a;
+  font-weight: 600;
+  margin: 0.67em 0;
+}
+
+.selection-assessment-list,.services-in-list{
+    display: block;
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+.selection-assessment-para,.selection-assessment-list,.career-coaching-outplacement-para,.services-in-list{
+    line-height: 1.8em;
+    padding: 10px 0;
+    font-size: 1.3em;
+    opacity: 0.92;
+}
+.selection-assessment-list,.career-coaching-outplacement-para,.services-in-list{
+    padding-bottom: 3em;
+}
+.first-img,.second-img{
+    max-width: 40%;
+    float: right;
+    margin: 15px 0 10px 15px;
+}
+img{
+    width: 100%;
+}
+@media(max-width:400px){
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+  }
+}
+@media(max-width:775px){
+  body{
+    padding: 0 5px;
+  }
+}
