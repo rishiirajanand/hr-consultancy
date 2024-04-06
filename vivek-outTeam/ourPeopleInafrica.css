@@ -117,6 +117,65 @@ ul .box {
 .box .dropdown-content a:hover {
   color: #bdbcb9;
 }
+.container{
+  max-width: 800px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto 0;
+  margin-top: 79px;
+}
+.container1{
+  max-width: 800px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto 0;
+  margin-top: 79px;
+}
+.align{
+  float: right;
+}
+
+h1{
+  font-size: 4.1875em;
+  line-height: 1.07462686567164em;
+  margin: 0;
+  margin-bottom: 0.71641791044776em;
+  font-weight: bold;
+  color: #00274a;
+  max-width: 800px;
+  text-align: center;
+}
+figure{
+  float: left;
+  width: 40%;
+  height: 370px;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+.img{
+  width: 300px;
+  height: 247px;
+  
+  
+}
+figcaption{
+  color: #727272;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: center;
+  margin-right: 50px;
+}
+p{
+  font-size: 24px;
+    line-height: 1.71429em;
+    margin-bottom: 1.71429em;
+    opacity: 0.92;
+    text-align: left;
+    
+}
+
+
 
 
 
