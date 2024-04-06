@@ -118,3 +118,28 @@ ul .box {
 .box .dropdown-content a:hover {
   color: #bdbcb9;
 }
+.p{
+  text-align: justify;
+}
+.wrapper.two {
+  /* background-color: #2c0101; */
+  font-size: 2.5rem;
+  font-family: "Play", sans-serif;
+}
+
+.neon h3 {
+  margin: 1rem auto;
+  animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  50% {
+      text-shadow: 0 0 10px #00d1ff, 0 0 10px #00274A, 0 0 10px #0057b0, 0 0 8px #00274A, 0 0 6px #6d9098, 2px 2px 2px #006a8c;
+      color:lightblue;
+  }
+  100% {
+      text-shadow: 0 0 2px #00587c, 0 0 5px #00587c, 0 0 5px #00587c, 0 0 5px #00587c, 0 0 2px #00587c, 4px 4px 2px #002e3f;
+      color: #00274A;
+  }
+} 
