@@ -10,95 +10,197 @@
 /* ************* FOOTER ************/
 
 
-footer{
+.footer {
     width: 100%;
-}
-
-.foot-first-box{
+  }
+  .footer .foot-first-box h3 a {
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  
+  .footer .foot-first-box {
     width: 100%;
-    background-color: #0062ab;
+    background-color: #f6f4f1;
     display: flex;
     justify-content: center;
-}
-
-.foot-box-1{
-    width: 80%;
+    background-color: #0062ab;
+    border-radius: 10px;
+  }
+  
+  .footer .foot-box-1 {
+    width: 70%;
     margin: 4rem 0px;
-}
-
-.foot-main-box{
+  }
+  
+  .footer .foot-main-box {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
     margin: 40px 0px 20px 0px;
-}
-.foot-link-box{
+  }
+  
+  .footer .foot-link-box {
     width: 70%;
     display: flex;
     justify-content: space-around;
-    
-}
-
-.foot-links h4{
+  }
+  
+  .footer .foot-links h3 {
     font-weight: 800;
     margin-bottom: 20px;
-    margin-left: 15px;
-}
-.foot-links div{
-    margin-left: 15px;
-}
-
-.foot-links li{
+    text-wrap: nowrap;
+  }
+  
+  .footer .foot-links div {
+    margin-left: 2px;
+  }
+  
+  .footer .foot-links li {
     font-size: 13px;
     list-style: none;
     line-height: 1.8em;
-}
-.foot-links li::before{
+  }
+  
+  .footer .foot-links li::before {
     content: ".";
     margin-right: 5px;
     position: relative;
     bottom: 4px;
-}
-.foot-links a{
+  }
+  
+  .footer .foot-links a {
     text-decoration: none;
-    color: white;
-}
-.foot-links a:hover{
-    color: #00274A;
-}
-
-/* Footer - Last Box */
-.foot-last-box{
+    color: #0062ab;
+  }
+  
+  .footer .foot-links a:hover {
+    color: #00274a;
+  }
+  
+  /* Footer - Last Box */
+  .footer .foot-last-box {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1D2031;
-    padding: 4% 0;
-
-}
-.foot-last-text{
-    width: 60%;
+    background-color: #1d2031;
+    padding: 80px 0;
+  }
+  
+  .footer .foot-last-text {
+    width: 30%;
     text-align: center;
     color: white;
-    /* border: 1px solid red; */
-}
-
-.foot-last-text a{
+  }
+  
+  .footer .foot-last-text a {
     text-decoration: none;
-    color: #C9A088;
-}
-.last-text-head{
-    font-size: 28px;
-    margin: 15px 0px;
-}
-.last-text-link{
-    font-size: 16px;
-    font-weight: 700;
-}
-
+    color: #c9a088;
+  }
+  
+  @keyframes superAnimation1 {
+    0% {
+      transform: scale(1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+    }
+    50% {
+      transform: scale(1.0);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+      background-color: lightblue;
+    }
+    100% {
+      transform: scale(1.02);
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+      background-color: lightgrey;
+    }
+  }
+  
+  .footer .foot-links a {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer .foot-links a:hover {
+    animation: superAnimation1 0.5s infinite alternate;
+  }
+  
+  .footer .foot-links h3 a {
+    color: white;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer .foot-last-text {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer .foot-last-text {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards, bounce 1s ease-in-out infinite alternate;
+  }
+  
+  .container1 {
+    text-align: center;
+    /* Center-align the content */
+    padding: 25px 0px;
+    background-color: #1d2031;
+    color: white;
+  }
+  
+  .span {
+    font-size: 40px;
+  }
+  .waviy {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .waviy span {
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i));
+    font-size: 40px;
+  }
+  @keyframes flip {
+    0%, 80% {
+      transform: rotateY(360deg);
+    }
+  }
 
 /*------------------------------------------------------Responsive--------------------------------------------------------------*/
 
