@@ -1,0 +1,66 @@
+.move{
+    position: relative;
+    opacity: 0%;
+}
+
+.animate{
+    animation-name: head;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.move-text{
+    position: relative;
+    opacity: 0%;
+}
+
+.animate-text{
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.move-text-right{
+    position: relative;
+    opacity: 0%;
+}
+
+.animate-text-right{
+    animation-name: moveRight;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes head {
+    0%{
+        transform: translateX(-40%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes move {
+    0%{
+        transform: translateX(-80%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes moveRight {
+    0%{
+        transform: translateX(+80%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

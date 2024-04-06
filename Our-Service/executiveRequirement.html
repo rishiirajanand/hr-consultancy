@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en" class="submenu-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Executive Recruitment Services | Aspire HR Consultants</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Font-Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="executiveRequirement.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <!------------------------ NAVBAR ----------------------->
+    <nav class="nav1">
+      <div class="logo">
+        <img src="logo.jpg" alt="logo"/>
+      </div>
+      <input type="checkbox" name="" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a>
+          <div class="dropdown">
+            <a href=""><p>Our Clients</p></a>
+            <a href=""><p>Testimonials</p></a>
+            <a href=""><p>Women Board Placement</p></a>
+            <a href=""><p>Vision & Mission</p></a>
+            <a href=""><p>MediaPage</p></a>
+          </div>
+        </li>
+        <li><a href="#">Our Team</a>
+          <div class="dropdown">
+            <a href=""><p>Local Senior Team</p></a>
+            <a href=""><p>Global Team</p></a>
+            <a href=""><p>Africa Desk</p></a>
+            <a href=""><p>Our People in Africa</p></a>
+          </div>
+        </li>
+        <li><a href="#">Our Services</a>
+          <div class="dropdown">
+            <a href=""><p>Services - In a Nutshell</p></a>
+            <a href=""><p>Executive Recruitment</p></a>
+            <a href=""><p>HR Consultancy</p></a>
+            <a href=""><p>Assessment & Coaching</p></a>
+            <a href=""><p>Digital HR Solutions</p></a>
+          </div>
+        </li>
+        <li><a href="#">Our Partners</a>
+          <div class="dropdown">
+            <a href=""><p>CEB SHL Tool Management</p></a>
+            <a href=""><p>Profit OKRs</p></a>
+            <a href=""><p>RiseSmart</p></a>
+          </div>
+        </li>
+        <li><a href="#">Mentorship Program</a>
+          <div class="dropdown">
+            <a href=""><p>Women Mentorship Program</p></a>
+            <a href=""><p>Application Form</p></a>
+          </div>
+        </li>
+        <li><a href="#">Insights Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <nav>
+        <img
+          src="logo.jpg"
+          alt="logo"
+        />
+        <div class="nav-content">
+          <ul>
+            <li class="active box">
+              <a href="#" onclick="setActive(this)">Home</a>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">About Us</a>
+              <div class="dropdown-content">
+                <a href="#">Our Clients</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Women Board Placement</a>
+                <a href="#">Vision & Mission</a>
+                <a href="#">Media Page</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Our Team</a>
+              <div class="dropdown-content">
+                <a href="#">Local Senior Team</a>
+                <a href="#">Global Team</a>
+                <a href="#">Africa Desk</a>
+                <a href="#">Our People in Africa</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Our Services</a>
+              <div class="dropdown-content">
+                <a href="#">Services-In a Nutshell</a>
+                <a href="#">Executive Recruitment</a>
+                <a href="#">HR Consultancy</a>
+                <a href="#">Assessment & Coaching</a>
+                <a href="#">Digital HR Solutions</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Our Partners</a>
+              <div class="dropdown-content">
+                <a href="#">CEB SHL Tool Management</a>
+                <a href="#">Executive Recruitment</a>
+                <a href="#">HR Consultancy</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="#" onclick="setActive(this)">Mentorship Program</a>
+              <div class="dropdown-content">
+                <a href="#">Women Mentorship Program</a>
+                <a href="#">Application Form</a>
+              </div>
+            </li>
+            <li class="box">
+              <a href="#" onclick="setActive(this)">Insight Blog</a>
+            </li>
+            <li class="box">
+              <a href="#" onclick="setActive(this)">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <div class="container onecol">
+      <h1
+        style="
+          overflow: hidden;
+          border-right: 2px solid #00274a;
+          white-space: nowrap;
+          animation: typewriter 8s steps(40) infinite alternate;
+          width: 450px;
+        "
+      >
+        Innovative Executive<br />Recruitment Service
+      </h1>
+      <div class="text article-big-text">
+        <p>
+          <span style="font-size: 16.8px">
+            Progressive organizations around the world are in constant search
+            for talent. Executive Recruitment provided by Aspire HRC is the most
+            effective way to find and place the perfect candidates for
+            management jobs in the Middle East. We establish solid partnerships
+            with our clients so as to understand their corporate cultures and
+            needs and provide them with successful matches through a meticulous
+            selection &amp; assessment process.
+          </span>
+          <br />
+        </p>
+        <p>
+          Our team in Cairo is fully trained to professionally cater for our
+          clients’ needs. Together with our global partners we are ranked as the
+          largest executive search alliance in terms of global reach. We exist
+          in more than 40+ countries across 6 continents. Together with our
+          technology solutions, and personal networking, we stand out as one of
+          the most reputable search firms in the Middle East.
+        </p>
+        <p>
+          Having specialized in the Egyptian markets since 2008 has given us
+          deep market knowledge of the various industries and cultural dynamics
+          that play a critical role in successfully completing a leadership
+          search.
+        </p>
+        <p>
+          We have key expertise and insights in diversity recruitment
+          initiatives.
+        </p>
+        <p>
+          Our distinctly different recruiters and search consultants focusing on
+          opposite ends of the talent spectrum provide us with a unique ability
+          to gain useful market intelligence on market conditions,
+          organizational dynamics, and opportunities to exact positive
+          transformation for our clients.
+        </p>
+        <p>
+          Combining our deep knowledge of Egypt with that of our colleagues in
+          Kestria ensures that our clients have access to high performing talent
+          when and where needed.
+        </p>
+        <div class="medium-insert-images medium-insert-images-center">
+          <figure>
+            <img
+              sizes="(min-width: 1015px) 1015px, 100vw"
+              src="https://www.aspire-hr.com/media/cache/73/ee/73ee5fda61b5a923337572e0c89d959a/kestria20global.jpg"
+            />
+            <figcaption>Kestria Global Conference 2019</figcaption>
+          </figure>
+        </div>
+        <p>
+          Over the past few years, we managed to successfully place thousands of
+          senior management professionals. The growing number of our satisfied
+          clients is a testimony of our professionalism and commitment. Our
+          distinguished team and premium recruitment have always helped us
+          provide unparalleled levels of service.
+        </p>
+        <p>
+          Internally, Aspire HRC's business processes, organization and work
+          flow are all designed and geared up to provide ultimate focus on the
+          customers' objectives and priorities. No wonder, Aspire HRC remains to
+          be the number 1 choice for many reputable companies in Egypt.
+        </p>
+      </div>
+    </div>
+    <!------------------------ FOOTER ----------------------->
+
+    <footer>
+      <div class="foot-first-box">
+          <div class="foot-box-1">
+              <hr style="opacity: 10%;"/>
+              <div class="foot-main-box">
+                  <div class="foot-link-box">
+                      <div class="foot-links">
+                          <h4><a href="#">Home</a></h4>
+                          <div>
+                              <!-- <li><a href="#">Our Clients</a></li> -->
+                              
+                          </div>  
+                      </div>  
+                      <div class="foot-links">
+                          <h4><a href="#">About Us</a></h4>
+                          <div>
+                              <li><a href="#">Our Clients</a></li>
+                              <li><a href="#">Testimonials</a></li>
+                              <li><a href="#">Women Board Placement</a></li>
+                              <li><a href="#">Vision & Mission</a></li>
+                              <li><a href="#">Media Page</a></li>
+                          </div>
+                      </div>  
+                      <div class="foot-links">
+                          <h4><a href="#">Our Team</a></h4>
+                          <div>
+                              <li><a href="#">Local Senior Team</a></li>
+                              <li><a href="#">Global Team</a></li>
+                              <li><a href="#">Africa Desk</a></li>
+                              <li><a href="#">Our People in Africa</a></li>
+                          </div>  
+                      
+                      </div>  
+                      <div class="foot-links">
+                          <h4><a href="#">Our Services</a></h4>
+                          <div>
+                              <li><a href="#">Services - In a Nutshell</a></li>
+                              <li><a href="#">Executive Recruitment</a></li>
+                              <li><a href="#">HR Consultancy</a></li>
+                              <li><a href="#">Assessment & Coaching</a></li>
+                              <li><a href="#">Digital HR Solutions</a></li>
+                          </div>  
+                      </div>  
+                  </div>
+                  <div class="foot-link-box">
+                      <div class="foot-links">
+                          <h4><a href="#">Our Partners</a></h4>
+                          <div>
+                              <li><a href="#">CEB SHL Tool Management</a></li>
+                              <li><a href="#">Profit OKRs</a></li>
+                              <li><a href="#">RiseSmart</a></li>
+                          </div>  
+                      </div>  
+                      <div class="foot-links">
+                          <h4><a href="#">Mentorship Program</a></h4>
+                          <div>
+                              <li><a href="#">Women Mentorship Program</a></li>
+                              <li><a href="#">Application Form</a></li>
+                          </div>
+                          
+      
+                      </div>  
+                      <div class="foot-links">
+                          <h4><a href="#">Our Team</a></h4>
+                          <div>
+                              <!-- <li><a href="#">Local Senior Team</a></li> -->
+                          </div>  
+                      
+                      </div>  
+                      <div class="foot-links">
+                          <h4><a href="#">Our Services</a></h4>
+                          <div>
+                              <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
+                          </div>  
+                      </div> 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="foot-last-box">
+          <div class="foot-last-text">
+              <p class="last-text-head">Fluent in <i>finding</i> leaders</p>
+              <p class="last-text-link"><a href="#">WWW.KESTRIA.COM</a></p>
+          </div>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>
