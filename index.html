@@ -16,396 +16,464 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
-      <a href="./index.html"
-        ><img src="./About-Us/images/logo.jpg" alt="logo"
-      /></a>
-      <div class="nav-content">
-        <ul>
-          <li class="active box">
-            <a href="index.html" onclick="setActive(this)">Home</a>
-          </li>
-          <li
-            class="box"
-            onmouseover="toggleDropdown(this, true)"
-            onmouseout="toggleDropdown(this, false)"
-          >
-            <a
-              href="./About-Us/pages/our-clients.html"
-              onclick="setActive(this)"
-              >About Us</a
-            >
-            <div class="dropdown-content">
-              <a href="./About-Us/pages/our-clients.html">Our Clients</a>
-              <a href="./About-Us/pages/Testimonials.html">Testimonials</a>
-              <a href="./About-Us/pages/Women-Board-Placement.html"
-                >Women Board Placement</a
-              >
-              <a href="./About-Us/pages/Vision-and-Mission.html"
-                >Vision & Mission</a
-              >
-              <a href="./About-Us/pages/Media-Page.html">Media Page</a>
-            </div>
-          </li>
-          <li
-            class="box"
-            onmouseover="toggleDropdown(this, true)"
-            onmouseout="toggleDropdown(this, false)"
-          >
-            <a href="/Our-Team/LocalSeniorTeam.html" onclick="setActive(this)"
-              >Our Team</a
-            >
-            <div class="dropdown-content">
-              <a href="/Our-Team/LocalSeniorTeam.html">Local Senior Team</a>
-              <a href="/Our-Team/globalTeam.html">Global Team</a>
-              <a href="/Our-Team/afrikaDesk.html">Africa Desk</a>
-              <a href="/Our-Team/ourPeopleInafrica.html"
-                >Our People in Africa</a
-              >
-            </div>
-          </li>
-          <li
-            class="box"
-            onmouseover="toggleDropdown(this, true)"
-            onmouseout="toggleDropdown(this, false)"
-          >
-            <a
-              href="/Our-Service/our_services_servicesInNutshell.html"
-              onclick="setActive(this)"
-              >Our Services</a
-            >
-            <div class="dropdown-content">
-              <a href="/Our-Service/our_services_servicesInNutshell.html"
-                >Services-In a Nutshell</a
-              >
-              <a href="/Our-Service/executiveRequirement.html"
-                >Executive Recruitment</a
-              >
-              <a href="/Our-Service/HRConsultancy.html">HR Consultancy</a>
-              <a href="/Our-Service/Assessment&Coaching.html"
-                >Assessment & Coaching</a
-              >
-              <a href="/Our-Service/DigitalHRSolutions.html"
-                >Digital HR Solutions</a
-              >
-            </div>
-          </li>
-          <li
-            class="box"
-            onmouseover="toggleDropdown(this, true)"
-            onmouseout="toggleDropdown(this, false)"
-          >
-            <a href="/Our-Partners/ourPartners.html" onclick="setActive(this)"
-              >Our Partners</a
-            >
-            <div class="dropdown-content">
-              <a href="/Our-Partners/ourPartners.html"
-                >CEB SHL Tool Management</a
-              >
-              <a href="/Our-Partners/profitOKRs.html">Profit OKRs</a>
-              <a href="/Our-Partners/riseSmart.html">RiseSmart</a>
-            </div>
-          </li>
-          <li
-            class="box"
-            onmouseover="toggleDropdown(this, true)"
-            onmouseout="toggleDropdown(this, false)"
-          >
-            <a
-              href="/Mentorship-Program/WomenMentorship/womenMentorship.html"
-              onclick="setActive(this)"
-              >Mentorship Program</a
-            >
-            <div class="dropdown-content">
-              <a href="/Mentorship-Program/WomenMentorship/womenMentorship.html"
-                >Women Mentorship Program</a
-              >
-              <a href="/Mentorship-Program/ApplicationForm/applicationForm.html"
-                >Application Form</a
-              >
-            </div>
-          </li>
-          <li class="box">
-            <a href="#" onclick="setActive(this)">Insight Blog</a>
-          </li>
-          <li class="box">
-            <a href="/Contact-Us/contact.html" onclick="setActive(this)"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="hero-container">
-      <div class="slider">
-        <div class="list">
-          <div class="item">
-            <img
-              src="https://media.licdn.com/dms/image/D5612AQEab1GehdhoEw/article-cover_image-shrink_720_1280/0/1710008228276?e=2147483647&v=beta&t=FsHbEL2NAOmmRm3Re_DjFbDAzFfV3xauN6llrobBX3w"
-              alt=""
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://www.regus.com/work-southafrica/wp-content/uploads/sites/116/2019/11/shutterstock_633364835_How-to-open-meeting-with-impact_resize-to-1024px-x-400px-landscape.jpg"
-              alt=""
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://www.deakin.edu.au/__data/assets/image/0011/595712/31081_GD-of-Professional-Acc_landscape.jpg"
-              alt=""
-            />
-          </div>
-          <div class="item">
-            <img
-              src="https://www.cobse.org.in/wp-content/uploads/2017/03/slide_2-1024x496.jpeg"
-              alt=""
-            />
-          </div>
-        </div>
-        <!-- Button Prev and Next -->
-        <div class="buttons">
-          <button id="prev"><</button>
-          <button id="next">></button>
-        </div>
-        <!-- Dots -->
-        <ul class="dots">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-      <div class="banner1">
-        <h1>Aspire HR Consultants <br />Fluent in finding leaders</h1>
-        <button class="btn">
-          Latest News <i class="ri-arrow-right-line"></i>
-        </button>
-      </div>
-      <div class="banner2">
-        <h1 class="hover-effect">
-          <a href="https://kestria.com/" target="_blank">Kestria</a>
-        </h1>
-        <h3>We are Kestria, the world's largest executive search alliance.</h3>
-        <a href="https://kestria.com/" target="_blank">WWW.KESTRIA.COM</a>
-      </div>
-      <div class="banner3">
-        <h3>The HR One-Stop Shop with <br />Your Professional HR Partner</h3>
-        <button class="btn2">
-          Our Size <i class="ri-arrow-right-line"></i>
-        </button>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <h2>Our Global Partners</h2>
-          <p>
-            Talent needs are global. That's why you'll find us in every corner
-            of the world. At Kestria, we have been uniting our clients with
-            top-level leaders for almost three decades. We are the world's
-            largest executive search alliance in terms of global reach - you'll
-            find us wherever your business takes you in the world.
-          </p>
-          <button>About Kestria <i class="ri-arrow-right-line"></i></button>
-        </div>
-
-        <div class="card">
-          <h2>Our Business Partners</h2>
-          <p>
-            Since starting up the business in March 2008, Aspire HRC’s client
-            base has expanded to include more than 100 reputable companies
-            covering multinational and local organizations. We also succeeded in
-            filling more than 100s of management vacancies and led 100 HR
-            consultancy projects.
-          </p>
-          <button>Our Clients <i class="ri-arrow-right-line"></i></button>
-        </div>
-
-        <div class="card">
-          <h2>MentorHer Program</h2>
-          <p>
-            Aspire HR Consultants has launched a world class women mentoring
-            program - Aspire MentorHer - for its clients. Our tailored mentoring
-            program is a complete solution combining methodology with
-            technology. It helps you transform your people and your
-            organization.
-          </p>
-          <button>Learn more! <i class="ri-arrow-right-line"></i></button>
-        </div>
-      </div>
-      <div class="video-section">
-        <div class="video-container">
-          <button
-            onclick="playVideo()"
-            class="play-btn"
-            aria-label="play video"
-          >
-            <span class="material-symbols-rounded" aria-hidden="true"
-              >play_arrow</span
-            >
-          </button>
-
-          <img
-            src="https://www.aspire-hr.com/media/cache/4e/41/4e415e62da8127fe5adf101b0afea50c/kestria-cover-video.webp"
-            class="video-thumbnail"
-            onclick="playVideo()"
-            alt=""
-          />
-          <iframe
-            id="youtube-video"
-            width="730"
-            height="398"
-            src="https://www.youtube.com/embed/Hm4AahC83N0?si=Uj_jlIxMnbNh5EbN"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <p>We are Kestria</p>
-      </div>
-      <div class="insights">
-        <div class="insights-header">
-          <h1>Insights Blog</h1>
-          <button class="btn-insight">
-            Insights Blog <i class="ri-arrow-right-line"></i>
-          </button>
-        </div>
-        <div class="insights-blogs">
-          <div class="insights-blog1">
-            <h2>Unconventional leaders elevate organisational success</h2>
-            <p>
-              In today's rapidly evolving business landscape, the role of
-              leadership has taken on a new dimension. Gone are the days when
-              industry experience within a single sector was the golden ticket
-              to success. Instead, a new breed of leaders is emerging - ones who
-              bring a wealth of knowledge and fresh perspectives from diverse
-              industries.
-            </p>
-          </div>
-          <div class="insights-blog2">
-            <h2>
-              Inclusion and productivity: The challenge of age diversity in the
-              corporate environment
-            </h2>
-            <p>
-              In recent years, we have witnessed a significant transformation in
-              the corporate landscape. For the first time in history, we have
-              four generations living together in the workforce: Baby boomers,
-              Generation X, Millennials and Generation Z. In this context, Human
-              Resources managers play a key role in promoting inclusion and
-              combating ageism, helping to build a work environment where
-              everyone feels valued and able to contribute their best.
-            </p>
-          </div>
-          <div class="insights-blog3">
-            <h2>
-              3 Pillars of competence for Thought Leaders in the corporate era
-            </h2>
-            <p>
-              In a scenario in which leadership profiles emerge and stand out
-              with very different characteristics, an essential figure has
-              emerged to successfully navigate the turbulent waters of the
-              business world: the Thought Leader. This new profile of
-              professionals not only masters their field but goes beyond it,
-              actively shaping the business landscape with their innovative and
-              insightful ideas.
-            </p>
-          </div>
-        </div>
-      </div>
+    <!-- Pre-Loader -->
+    <div class="preloader">
+      <span class="tile-1"></span>
+      <span class="tile-2"></span>
+      <span class="tile-3"></span>
+      <span class="tile-4"></span>
     </div>
-    <!-- Footer -->
-    <footer>
-      <div class="foot-first-box">
-        <div class="foot-box-1">
-          <hr style="opacity: 10%" />
-          <div class="foot-main-box">
-            <div class="foot-link-box">
-              <div class="foot-links">
-                <h4><a href="#">Home</a></h4>
-                <div>
-                  <!-- <li><a href="#">Our Clients</a></li> -->
-                </div>
+    <!-- Navbar -->
+    <div class="container" style="display: none">
+      <nav>
+        <a href="./index.html"
+          ><img src="./About-Us/images/logo.jpg" alt="logo"
+        /></a>
+        <div class="nav-content">
+          <ul>
+            <li class="active box">
+              <a href="index.html" onclick="setActive(this)">Home</a>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a
+                href="./About-Us/pages/our-clients.html"
+                onclick="setActive(this)"
+                >About Us</a
+              >
+              <div class="dropdown-content">
+                <a href="./About-Us/pages/our-clients.html">Our Clients</a>
+                <a href="./About-Us/pages/Testimonials.html">Testimonials</a>
+                <a href="./About-Us/pages/Women-Board-Placement.html"
+                  >Women Board Placement</a
+                >
+                <a href="./About-Us/pages/Vision-and-Mission.html"
+                  >Vision & Mission</a
+                >
+                <a href="./About-Us/pages/Media-Page.html">Media Page</a>
               </div>
-              <div class="foot-links">
-                <h4><a href="#">About Us</a></h4>
-                <div>
-                  <li><a href="#">Our Clients</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Women Board Placement</a></li>
-                  <li><a href="#">Vision & Mission</a></li>
-                  <li><a href="#">Media Page</a></li>
-                </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="/Our-Team/LocalSeniorTeam.html" onclick="setActive(this)"
+                >Our Team</a
+              >
+              <div class="dropdown-content">
+                <a href="/Our-Team/LocalSeniorTeam.html">Local Senior Team</a>
+                <a href="/Our-Team/globalTeam.html">Global Team</a>
+                <a href="/Our-Team/afrikaDesk.html">Africa Desk</a>
+                <a href="/Our-Team/ourPeopleInafrica.html"
+                  >Our People in Africa</a
+                >
               </div>
-              <div class="foot-links">
-                <h4><a href="#">Our Team</a></h4>
-                <div>
-                  <li><a href="#">Local Senior Team</a></li>
-                  <li><a href="#">Global Team</a></li>
-                  <li><a href="#">Africa Desk</a></li>
-                  <li><a href="#">Our People in Africa</a></li>
-                </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a
+                href="/Our-Service/our_services_servicesInNutshell.html"
+                onclick="setActive(this)"
+                >Our Services</a
+              >
+              <div class="dropdown-content">
+                <a href="/Our-Service/our_services_servicesInNutshell.html"
+                  >Services-In a Nutshell</a
+                >
+                <a href="/Our-Service/executiveRequirement.html"
+                  >Executive Recruitment</a
+                >
+                <a href="/Our-Service/HRConsultancy.html">HR Consultancy</a>
+                <a href="/Our-Service/Assessment&Coaching.html"
+                  >Assessment & Coaching</a
+                >
+                <a href="/Our-Service/DigitalHRSolutions.html"
+                  >Digital HR Solutions</a
+                >
               </div>
-              <div class="foot-links">
-                <h4><a href="#">Our Services</a></h4>
-                <div>
-                  <li><a href="#">Services - In a Nutshell</a></li>
-                  <li><a href="#">Executive Recruitment</a></li>
-                  <li><a href="#">HR Consultancy</a></li>
-                  <li><a href="#">Assessment & Coaching</a></li>
-                  <li><a href="#">Digital HR Solutions</a></li>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a href="/Our-Partners/ourPartners.html" onclick="setActive(this)"
+                >Our Partners</a
+              >
+              <div class="dropdown-content">
+                <a href="/Our-Partners/ourPartners.html"
+                  >CEB SHL Tool Management</a
+                >
+                <a href="/Our-Partners/profitOKRs.html">Profit OKRs</a>
+                <a href="/Our-Partners/riseSmart.html">RiseSmart</a>
+              </div>
+            </li>
+            <li
+              class="box"
+              onmouseover="toggleDropdown(this, true)"
+              onmouseout="toggleDropdown(this, false)"
+            >
+              <a
+                href="/Mentorship-Program/WomenMentorship/womenMentorship.html"
+                onclick="setActive(this)"
+                >Mentorship Program</a
+              >
+              <div class="dropdown-content">
+                <a
+                  href="/Mentorship-Program/WomenMentorship/womenMentorship.html"
+                  >Women Mentorship Program</a
+                >
+                <a
+                  href="/Mentorship-Program/ApplicationForm/applicationForm.html"
+                  >Application Form</a
+                >
+              </div>
+            </li>
+            <li class="box">
+              <a href="#" onclick="setActive(this)">Insight Blog</a>
+            </li>
+            <li class="box">
+              <a href="/Contact-Us/contact.html" onclick="setActive(this)"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero-container">
+        <div class="slider">
+          <div class="list">
+            <div class="item">
+              <img
+                src="https://media.licdn.com/dms/image/D5612AQEab1GehdhoEw/article-cover_image-shrink_720_1280/0/1710008228276?e=2147483647&v=beta&t=FsHbEL2NAOmmRm3Re_DjFbDAzFfV3xauN6llrobBX3w"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://www.regus.com/work-southafrica/wp-content/uploads/sites/116/2019/11/shutterstock_633364835_How-to-open-meeting-with-impact_resize-to-1024px-x-400px-landscape.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://www.deakin.edu.au/__data/assets/image/0011/595712/31081_GD-of-Professional-Acc_landscape.jpg"
+                alt=""
+              />
+            </div>
+            <div class="item">
+              <img
+                src="https://www.cobse.org.in/wp-content/uploads/2017/03/slide_2-1024x496.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Button Prev and Next -->
+          <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+          <!-- Dots -->
+          <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="banner1">
+          <h1>Aspire HR Consultants <br />Fluent in finding leaders</h1>
+          <button class="btn">
+            Latest News <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+        <div class="banner2">
+          <h1 class="hover-effect">
+            <a href="https://kestria.com/" target="_blank">Kestria</a>
+          </h1>
+          <h3>
+            We are Kestria, the world's largest executive search alliance.
+          </h3>
+          <a href="https://kestria.com/" target="_blank">WWW.KESTRIA.COM</a>
+        </div>
+        <div class="banner3">
+          <h3>The HR One-Stop Shop with <br />Your Professional HR Partner</h3>
+          <button class="btn2">
+            Our Size <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h2>Our Global Partners</h2>
+            <p>
+              Talent needs are global. That's why you'll find us in every corner
+              of the world. At Kestria, we have been uniting our clients with
+              top-level leaders for almost three decades. We are the world's
+              largest executive search alliance in terms of global reach -
+              you'll find us wherever your business takes you in the world.
+            </p>
+            <button>About Kestria <i class="ri-arrow-right-line"></i></button>
+          </div>
+
+          <div class="card">
+            <h2>Our Business Partners</h2>
+            <p>
+              Since starting up the business in March 2008, Aspire HRC’s client
+              base has expanded to include more than 100 reputable companies
+              covering multinational and local organizations. We also succeeded
+              in filling more than 100s of management vacancies and led 100 HR
+              consultancy projects.
+            </p>
+            <button>Our Clients <i class="ri-arrow-right-line"></i></button>
+          </div>
+
+          <div class="card">
+            <h2>MentorHer Program</h2>
+            <p>
+              Aspire HR Consultants has launched a world class women mentoring
+              program - Aspire MentorHer - for its clients. Our tailored
+              mentoring program is a complete solution combining methodology
+              with technology. It helps you transform your people and your
+              organization.
+            </p>
+            <button>Learn more! <i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+        <div class="video-section">
+          <div class="video-container">
+            <button
+              onclick="playVideo()"
+              class="play-btn"
+              aria-label="play video"
+            >
+              <span class="material-symbols-rounded" aria-hidden="true"
+                >play_arrow</span
+              >
+            </button>
+
+            <img
+              src="https://www.aspire-hr.com/media/cache/4e/41/4e415e62da8127fe5adf101b0afea50c/kestria-cover-video.webp"
+              class="video-thumbnail"
+              onclick="playVideo()"
+              alt=""
+            />
+            <iframe
+              id="youtube-video"
+              width="730"
+              height="398"
+              src="https://www.youtube.com/embed/Hm4AahC83N0?si=Uj_jlIxMnbNh5EbN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>We are Kestria</p>
+        </div>
+        <div class="insights">
+          <div class="insights-header">
+            <h1>Insights Blog</h1>
+            <button class="btn-insight">
+              Insights Blog <i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+          <div class="insights-blogs">
+            <div class="insights-blog1">
+              <h2>Unconventional leaders elevate organisational success</h2>
+              <p>
+                In today's rapidly evolving business landscape, the role of
+                leadership has taken on a new dimension. Gone are the days when
+                industry experience within a single sector was the golden ticket
+                to success. Instead, a new breed of leaders is emerging - ones
+                who bring a wealth of knowledge and fresh perspectives from
+                diverse industries.
+              </p>
+            </div>
+            <div class="insights-blog2">
+              <h2>
+                Inclusion and productivity: The challenge of age diversity in
+                the corporate environment
+              </h2>
+              <p>
+                In recent years, we have witnessed a significant transformation
+                in the corporate landscape. For the first time in history, we
+                have four generations living together in the workforce: Baby
+                boomers, Generation X, Millennials and Generation Z. In this
+                context, Human Resources managers play a key role in promoting
+                inclusion and combating ageism, helping to build a work
+                environment where everyone feels valued and able to contribute
+                their best.
+              </p>
+            </div>
+            <div class="insights-blog3">
+              <h2>
+                3 Pillars of competence for Thought Leaders in the corporate era
+              </h2>
+              <p>
+                In a scenario in which leadership profiles emerge and stand out
+                with very different characteristics, an essential figure has
+                emerged to successfully navigate the turbulent waters of the
+                business world: the Thought Leader. This new profile of
+                professionals not only masters their field but goes beyond it,
+                actively shaping the business landscape with their innovative
+                and insightful ideas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="home-contact">
+          <div class="cont">
+            <div class="info move-left">
+              <div class="location">
+                <h3>INDIA</h3>
+              </div>
+              <div class="location">
+                <h3>PUNE,WAKAD</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-head">
+                  <span>CONTACT</span>
+                  <hr />
+                </div>
+                <div class="details-box">
+                  <p>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <span>+91-1234567891</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contact@gmail.com</span>
+                  </p>
+                </div>
+                <div class="contact-head">
+                  <span>ADDRESS</span>
+                  <hr />
+                </div>
+                <div class="address">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>
+                    603, White Square, Hinjawadi - Wakad Rd, near Wakad, Pune,
+                    Maharashtra 411057
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="foot-link-box">
-              <div class="foot-links">
-                <h4><a href="ourPartners/ourPartners.html">Our Partners</a></h4>
-                <div>
-                  <li>
-                    <a href="ourPartners/ourPartners.html"
-                      >CEB SHL Tool Management</a
-                    >
-                  </li>
-                  <li><a href="ourPartners/profitOKRs.html">Profit OKRs</a></li>
-                  <li><a href="ourPartners/riseSmart.html">RiseSmart</a></li>
+
+            <div class="map move-right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811420000!5m2!1sen!2sin"
+                width="600"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="foot-first-box">
+          <div class="foot-box-1">
+            <hr style="opacity: 10%" />
+            <div class="foot-main-box">
+              <div class="foot-link-box">
+                <div class="foot-links">
+                  <h4><a href="#">Home</a></h4>
+                  <div>
+                    <!-- <li><a href="#">Our Clients</a></li> -->
+                  </div>
+                </div>
+                <div class="foot-links">
+                  <h4><a href="#">About Us</a></h4>
+                  <div>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Women Board Placement</a></li>
+                    <li><a href="#">Vision & Mission</a></li>
+                    <li><a href="#">Media Page</a></li>
+                  </div>
+                </div>
+                <div class="foot-links">
+                  <h4><a href="#">Our Team</a></h4>
+                  <div>
+                    <li><a href="#">Local Senior Team</a></li>
+                    <li><a href="#">Global Team</a></li>
+                    <li><a href="#">Africa Desk</a></li>
+                    <li><a href="#">Our People in Africa</a></li>
+                  </div>
+                </div>
+                <div class="foot-links">
+                  <h4><a href="#">Our Services</a></h4>
+                  <div>
+                    <li><a href="#">Services - In a Nutshell</a></li>
+                    <li><a href="#">Executive Recruitment</a></li>
+                    <li><a href="#">HR Consultancy</a></li>
+                    <li><a href="#">Assessment & Coaching</a></li>
+                    <li><a href="#">Digital HR Solutions</a></li>
+                  </div>
                 </div>
               </div>
-              <div class="foot-links">
-                <h4><a href="#">Mentorship Program</a></h4>
-                <div>
-                  <li><a href="#">Women Mentorship Program</a></li>
-                  <li><a href="#">Application Form</a></li>
+              <div class="foot-link-box">
+                <div class="foot-links">
+                  <h4>
+                    <a href="ourPartners/ourPartners.html">Our Partners</a>
+                  </h4>
+                  <div>
+                    <li>
+                      <a href="ourPartners/ourPartners.html"
+                        >CEB SHL Tool Management</a
+                      >
+                    </li>
+                    <li>
+                      <a href="ourPartners/profitOKRs.html">Profit OKRs</a>
+                    </li>
+                    <li><a href="ourPartners/riseSmart.html">RiseSmart</a></li>
+                  </div>
                 </div>
-              </div>
-              <div class="foot-links">
-                <h4><a href="#">Our Team</a></h4>
-                <div>
-                  <!-- <li><a href="#">Local Senior Team</a></li> -->
+                <div class="foot-links">
+                  <h4><a href="#">Mentorship Program</a></h4>
+                  <div>
+                    <li><a href="#">Women Mentorship Program</a></li>
+                    <li><a href="#">Application Form</a></li>
+                  </div>
                 </div>
-              </div>
-              <div class="foot-links">
-                <h4><a href="#">Our Services</a></h4>
-                <div>
-                  <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
+                <div class="foot-links">
+                  <h4><a href="#">Our Team</a></h4>
+                  <div>
+                    <!-- <li><a href="#">Local Senior Team</a></li> -->
+                  </div>
+                </div>
+                <div class="foot-links">
+                  <h4><a href="#">Our Services</a></h4>
+                  <div>
+                    <!-- <li><a href="#">Services - In a Nutshell</a></li> -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="foot-last-box">
-        <div class="foot-last-text">
-          <p class="last-text-head">Fluent in <i>finding</i> leaders</p>
-          <p class="last-text-link"><a href="#">WWW.KESTRIA.COM</a></p>
+        <div class="foot-last-box">
+          <div class="foot-last-text">
+            <p class="last-text-head">Fluent in <i>finding</i> leaders</p>
+            <p class="last-text-link"><a href="#">WWW.KESTRIA.COM</a></p>
+          </div>
         </div>
-      </div>
-    </footer>
-
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
