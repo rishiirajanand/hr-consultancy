@@ -110,6 +110,41 @@ iframe{
     }
 }
 
+@media (max-width:820px) {
+    .html{
+        font-size: 55%;
+    }
+    .parent{
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .mentorimg {
+        width: 750px;
+    }  
+
+    .video{
+        width: 765px;
+    }
+    
+}
+
+@media (max-width:768px) {
+
+    .html{
+        font-size: 50%;
+        width: 100%;
+    }
+    .parent{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mentorimg{
+        width: 680pxpx;
+    }
+}
+
 @media (max-width:600px) {
     .heading {
         font-size: 43px;
@@ -144,6 +179,9 @@ iframe{
     
 }
 @media (max-width:550px) {
+    .html{
+        font-size: 55%;
+    }
     .heading{
         margin-left: 40px;
         margin-right: 40px;
