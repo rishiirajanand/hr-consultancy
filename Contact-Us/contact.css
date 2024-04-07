@@ -350,3 +350,12 @@ h3 {
     width: 800px;
   }
 }
+
+@media (max-width:899px) {
+  .container{
+    width: 90%;
+    margin-left: 30px;
+
+  }
+  
+}
