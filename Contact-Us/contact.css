@@ -144,10 +144,13 @@ iframe{
   opacity: 70%;
 }
 
+
+/* ************************************** CONTACT FORM *******************************/
+
+
 .contact-form {
   width: 100%;
   max-width: 400px;
-  /* margin: 50px auto; */
   padding: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -198,13 +201,11 @@ iframe{
 .contact-form input[type="submit"]:hover {
   background-color: #3e8e41;
 }
-
 .cnt-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom: 20px;
-  margin-right: 130px;
+  gap: 3rem;
 }
 
 h3 {
@@ -212,16 +213,113 @@ h3 {
   margin-bottom: 15px;
 }
 
-#icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .map {
   width: 600px;
   height: 450px;
 }
+/* ************************************** CARD ANIMATION ********************/
+#card-container{
+  width: 425px;
+}
+.card-main {
+  /* flex-basis: calc(30% - 30px); */ 
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.link-box{
+  padding: 30px 20px;
+  background-color: #F6F4F1;
+  overflow: hidden;
+  position: relative;
+  color: #00274A;
+}
+
+.link-box:hover{
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+}
+.link-box:hover .card-color {
+  transform: scale(10);
+  transform: scale(10);
+  transform: scale(10);
+}
+.card-color{
+  height: 128px;
+  width: 128px;
+  background-color: #0057B0;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+.card-body{
+  position: relative;
+  z-index: 2;
+}
+
+.card-head{
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.card-contact span{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-contact hr{
+  position: relative;
+  width: 173px;
+  top: -9px;
+  left: 68px;
+}
+
+.card-contact-box{
+  margin: 1rem 0;
+}
+.card-contact-box i{
+  font-size: 50px;
+  position: relative;
+  margin-right: 1rem;
+  top: 3px;
+  color: lightgray;
+}
+.card-contact-box{
+  display: flex;
+}
+
+.card-contact-info p{
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.card-social-icon{
+  margin-top: 1rem;
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+}
+.card-social-icon i{
+  font-size: 1.6rem;
+}
+.card-social-icon i:nth-child(3){
+  color: red;
+}
+.card-social-icon i:nth-child(4){
+  color: rgb(215, 46, 227);
+}
+.card-social-icon i:hover{
+  transform: scale(1.1);
+} 
+
+
+
+
 
 /*-------------------------------------------responsive---------------------------------------------------*/
 
