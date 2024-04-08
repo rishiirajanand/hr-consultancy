@@ -1,3 +1,16 @@
+// Preloader
+let body = document.getElementsByTagName("body")[0];
+
+window.addEventListener("load", function () {
+  var preloader = document.querySelector(".preloader");
+  document.querySelector(".container").style.display = "none";
+  setTimeout(function () {
+    preloader.style.display = "none";
+    document.querySelector(".container").style.display = "block";
+    body.style.backgroundColor = "transparent";
+  }, 3500);
+});
+
 // Navbar
 function setActive(element) {
   let lis = document.querySelectorAll(".nav-content ul li");
