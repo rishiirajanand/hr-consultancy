@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     preloader.style.display = "none";
     document.querySelector(".container").style.display = "block";
     body.style.backgroundColor = "transparent";
-  }, 3500);
+  }, 2900);
 });
 
 // Navbar
