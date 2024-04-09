@@ -23,7 +23,7 @@
   <!------------------------ NAVBAR ----------------------->
   <nav class="nav1">
     <div class="logo">
-      <a href="/index.html"><img src="../images/logo.jpg" alt="logo"/></a>
+      <a href="/index.html"><img src="../images/logo.jpg" alt="logo" /></a>
     </div>
     <input type="checkbox" name="" id="click">
     <label for="click" class="menu-btn">
@@ -50,7 +50,7 @@
           </a>
         </div>
       </li>
-      <li><a href="/Our-Team/LocalSeniorTeam.html">Our Team</a>
+      <li><a href="#">Our Team</a>
         <div class="dropdown">
           <a href="">
             <p>Local Senior Team</p>
@@ -66,7 +66,7 @@
           </a>
         </div>
       </li>
-      <li><a href="/Our-Service/our_services_servicesInNutshell.html">Our Services</a>
+      <li><a href="#">Our Services</a>
         <div class="dropdown">
           <a href="">
             <p>Services - In a Nutshell</p>
@@ -85,7 +85,7 @@
           </a>
         </div>
       </li>
-      <li><a href="/Our-Partners/ourPartners.html">Our Partners</a>
+      <li><a href="#">Our Partners</a>
         <div class="dropdown">
           <a href="">
             <p>CEB SHL Tool Management</p>
@@ -98,7 +98,7 @@
           </a>
         </div>
       </li>
-      <li><a href="/Mentorship-Program/WomenMentorship/womenMentorship.html">Mentorship Program</a>
+      <li><a href="#">Mentorship Program</a>
         <div class="dropdown">
           <a href="">
             <p>Women Mentorship Program</p>
@@ -112,11 +112,10 @@
       <li><a href="#">Contact Us</a></li>
     </ul>
   </nav>
-  
-  <nav>
-    <img src="../Images/logo.jpg" alt="logo" />
-    <div class="nav-content">
 
+  <nav>
+    <a href="/index.html"><img src="../images/logo.jpg" alt="logo" /></a>
+    <div class="nav-content">
       <ul>
         <li class="active box">
           <a href="#" onclick="setActive(this)">Home</a>
@@ -172,65 +171,6 @@
           <a href="#" onclick="setActive(this)">Contact Us</a>
         </li>
       </ul>
-
-      <ul>
-        <li class="active box">
-          <a href="/index.html" onclick="setActive(this)">Home</a>
-        </li>
-        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
-          <a href="/About-Us/pages/our-clients.html" onclick="setActive(this)">About Us</a>
-          <div class="dropdown-content">
-            <a href="/About-Us/pages/our-clients.html">Our Clients</a>
-            <a href="/About-Us/pages/Testimonials.html">Testimonials</a>
-            <a href="/About-Us/pages/Women-Board-Placement.html">Women Board Placement</a>
-            <a href="/About-Us/pages/Vision-and-Mission.html">Vision & Mission</a>
-            <a href="/About-Us/pages/Media-Page.html">Media Page</a>
-          </div>
-        </li>
-        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
-          <a href="/vivek-outTeam/LocalSeniorTeam.html" onclick="setActive(this)">Our Team</a>
-          <div class="dropdown-content">
-            <a href="/vivek-outTeam/LocalSeniorTeam.html">Local Senior Team</a>
-            <a href="#">Global Team</a>
-            <a href="#">Africa Desk</a>
-            <a href="#">Our People in Africa</a>
-          </div>
-        </li>
-        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
-          <a href="/OurService/our_services_servicesInNutshell.html" onclick="setActive(this)">Our
-            Services</a>
-          <div class="dropdown-content">
-            <a href="/OurService/our_services_servicesInNutshell.html">Services-In a Nutshell</a>
-            <a href="/OurService/executiveRequirement.html">Executive Recruitment</a>
-            <a href="/OurService/HRConsultancy.html">HR Consultancy</a>
-            <a href="/OurService/Assessment&Coaching.html">Assessment & Coaching</a>
-            <a href="#">Digital HR Solutions</a>
-          </div>
-        </li>
-        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
-          <a href="/ourPartners/ourPartners.html" onclick="setActive(this)">Our Partners</a>
-          <div class="dropdown-content">
-            <a href="/ourPartners/ourPartners.html">CEB SHL Tool Management</a>
-            <a href="/ourPartners/profitOKRs.html">Profit OKRs</a>
-            <a href="/ourPartners/riseSmart.html">RiseSmart</a>
-          </div>
-        </li>
-        <li class="box" onmouseover="toggleDropdown(this, true)" onmouseout="toggleDropdown(this, false)">
-          <a href="/Mentorship Program/WomenMentorship/womenMentorship.html" onclick="setActive(this)">Mentorship
-            Program</a>
-          <div class="dropdown-content">
-            <a href="/Mentorship Program/WomenMentorship/womenMentorship.html">Women Mentorship Program</a>
-            <a href="/Mentorship Program/ApplicationForm/applicationForm.html">Application Form</a>
-          </div>
-        </li>
-        <li class="box">
-          <a href="#" onclick="setActive(this)">Insight Blog</a>
-        </li>
-        <li class="box">
-          <a href="#" onclick="setActive(this)">Contact Us</a>
-        </li>
-      </ul>
-
     </div>
   </nav>
 
@@ -273,7 +213,7 @@
 
           <div class="formGrp">
             <p>Note</p>
-            <textarea rows="3" cols="30"></textarea>
+            <textarea class="textarea" rows="3" cols="30"></textarea>
           </div>
 
           <button id="btn" disabled onclick="redirectToHomePage()">Send</button>

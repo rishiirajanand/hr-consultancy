@@ -6,9 +6,10 @@
 }
 
 .heading {
-    color: rgb(0, 39, 74);
+    color: #00274a;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: bold;
     text-align: center;
-    text-shadow: 2px 2px 4px #000000;
     font-size: 70px;
     margin-bottom: 30px;
     margin-top: -33px;
@@ -18,13 +19,15 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    width: 100%;
 }
 
 .container {
     width: 450px;
     background-color: rgb(246, 244, 241);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #ddd;
     margin-bottom: 80px;
+    border-radius: 10px;
 }
 
 .formGrp {
@@ -56,7 +59,7 @@ input {
 }
 
 .inp {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     height: 42px;
 }
@@ -76,7 +79,7 @@ input {
 }
 
 textarea {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
 }
 
@@ -90,7 +93,7 @@ button {
     font-size: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 button:hover {
     background-color: rgb(9, 40, 70);
@@ -104,76 +107,211 @@ button:disabled {
 .sideParagraph {
     width: 270px;
     font-size: 20px;
+    box-sizing: border-box;
     /* font-weight: 700; */
 }
 
 /* ------------------------------Responsive -------------------------------- */
 
-@media (max-width:1000px) {
+@media (max-width:1024px) {
     .heading {
-        font-size: 50px;
-        text-align: left;
-        margin-left: 90px;
+        font-size: 68px;
+        text-align: center;
     }
     .parent {
-        gap: 10px;
+        gap: 27px;
+    }
+    .sideParagraph{
+        width: 265px;
+    font-size: 18px;
     }
     }
 
-@media (max-width:800px) {
-    .heading{
-        font-size: 45px;
+@media (max-width:768px) {
+    .heading {
+        font-size: 58px;
+    text-align: center;
     }
-
     .parent {
-        display: flex;
-        justify-content: center;
-        gap:5px;  
+        gap: 20px;
     }
-
-    .formGrp {
-        margin-bottom: 8px;
-        padding: 0px 30px;
-        font-size: 10px;
-    } 
-}
-
-@media (max-width:760px) {
-   .sideParagraph{
-    display: none;
-   }
-
-   .heading{
-    text-align: center;
-   }
-
-   .container {
-    width: 550px;
-    margin-bottom: 80px;
-}
-
-.formGrp{
-    width: 100%;
-}
-}
-
-@media (max-width:570px) {
-    .heading{
-    font-size: 40px;
-    text-align: center;
+    .sideParagraph{
+        width: 257px;
+    font-size: 16px;
     }
-
     .container{
-        width: 500px;
-        margin-left: 45px;
-        margin-right: 45px;  
+        width: 400px;
     }
     .formGrp {
-        width: 85%;
+        margin-bottom: 5px;
+        padding: 0px 30px;
+        font-size: 16px;
+    }
+    .fileText {
         font-size: 15px;
-    } 
-}
-
-
-
-
+    }
+    
+    .file{
+        width: 218px;
+        height: 45px;
+        font-size: 16px;
+    }
+    label {
+        padding-top: 16px;
+    }
+    
+    input {
+        width: 100%;
+        margin-top: 7px;
+        padding: 6px 0px;
+    }
+    
+    .inp {
+        height: 35px;
+    }
+    button {
+        width: 145px;
+    height: 60px;
+    margin: 20px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    }
+    .errorMsg{
+        font-size: 14px;
+    padding: 7px;
+    }
+    #successMsg{
+        font-size: 14px;
+    padding: 7px;
+    }
+    }
+    @media (max-width:500px) {
+        .heading {
+            font-size: 40px;
+        text-align: center;
+        }
+        .parent {
+            flex-direction: column;
+            align-items: center;
+        }
+        .sideParagraph{
+            width: 300px;
+            font-size: 14px;
+            margin-top: -80px;
+            margin-bottom: 15px;
+        }
+        .container{
+            width: 350px;
+        }
+        .formGrp {
+            margin-bottom: 4px;
+            padding: 0px 30px;
+            font-size: 14px;
+        }
+        .fileText {
+            font-size: 11px;
+        }
+        
+        .file{
+            width: 189px;
+    height: 40px;
+    font-size: 14px;
+        }
+        label {
+            padding-top: 15px;
+        }
+        
+        input {
+            width: 100%;
+            margin-top: 6px;
+            padding: 5px 0px;
+        }
+        
+        .inp {
+            height: 30px;
+        }
+        button {
+            width: 120px;
+            height: 50px;
+            margin: 15px 30px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        .textarea{
+            width: 155px;
+            height: 47px;
+        }
+        .errorMsg{
+            font-size: 12px;
+        padding: 5px;
+        }
+        #successMsg{
+            font-size: 12px;
+    padding: 7px;
+        }
+    }
+    @media (max-width:330px){
+        .heading {
+            font-size: 30px;
+        text-align: center;
+        }
+        .parent {
+            flex-direction: column;
+            align-items: center;
+        }
+        .sideParagraph{
+            width: 190px;
+            font-size: 10px;
+            margin-top: -80px;
+            margin-bottom: 15px;
+        }
+        .container{
+            width: 250px;
+        }
+        .formGrp {
+            margin-bottom: 4px;
+            padding: 0px 20px;
+            font-size: 12px;
+        }
+        .fileText {
+            font-size: 11px;
+        }
+        
+        .file{
+            width: 144px;
+    height: 30px;
+    font-size: 10px;
+        }
+        label {
+            padding-top: 12px;
+        }
+        
+        input {
+            width: 100%;
+            margin-top: 5px;
+            padding: 5px 0px;
+        }
+        
+        .inp {
+            height: 25px;
+        }
+        button {
+            width: 95px;
+            height: 42px;
+            margin: 10px 20px;
+            font-size: 12px;
+            border-radius: 10px;
+        }
+        .textarea{
+            width: 145px;
+    height: 40px;
+        }
+        .errorMsg{
+            font-size: 9px;
+            padding: 3px;
+        }
+        #successMsg{
+            font-size: 9px;
+    padding: 7px;
+        }
+    }
