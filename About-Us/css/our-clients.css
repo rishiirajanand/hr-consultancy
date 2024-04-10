@@ -518,9 +518,7 @@ border-radius: 10px;
 @media (max-width:1000px) {
     .heading-box p{
         font-size: 20px;
-        opacity: 70%;
         line-height: 2rem;
-        text-align: justify;
     }
     .main-container{
         max-width: 700px;
@@ -538,9 +536,6 @@ border-radius: 10px;
 @media (max-width:850px) {
     .heading-box p{
         font-size: 18px;
-        opacity: 70%;
-        line-height: 2rem;
-        text-align: justify;
     }
     .main-container{
         max-width: 600px;
@@ -553,17 +548,15 @@ border-radius: 10px;
         gap: 18px 9px;
     
     }
+    .heading-box h1 {
+      margin-top: 20px;
+    }
+
 }
 
 @media (max-width:700px) {
-    .heading-box p{
-        font-size: 18px;
-        opacity: 70%;
-        line-height: 2rem;
-        text-align: justify;
-    }
     .main-container{
-        max-width: 400px;
+        max-width: 540px;
         margin: 10% 0px;
         
     }
@@ -573,20 +566,30 @@ border-radius: 10px;
         gap: 18px 9px;
     
     }
+    .heading-box h1 {
+      margin-top: 40px;
+    }
 }
-
-@media (max-width:500px) {
-    .heading-box p{
-        font-size: 18px;
-        opacity: 70%;
-        line-height: 1.5rem;
-        text-align: justify;
-    }
-    .main-container{
-        max-width: 250px;
-        margin: 10% 0px;
-        
-    }
+@media (max-width:600px) {
+  .heading-box p{
+    line-height: 1.5rem;
+}
+.main-container{
+    max-width: 480px;
+    margin: 10% 0px;
+    
+}
+.heading-box h1 {
+  margin-top: 50px;
+}
+}
+@media (max-width:520px) {
+  .heading-box h1 {
+    margin-top: 60px;
+  }
+  .main-container{
+    max-width: 400px;
+  }
     .client-image{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -601,6 +604,18 @@ border-radius: 10px;
     .images-box h1{
         font-size: 22px;
     }
+}
+
+@media (max-width:450px) {
+  .main-container{
+    max-width: 350px;
+  }
+}
+
+@media (max-width:400px) {
+  .main-container{
+    max-width: 300px;
+  }
 }
 
 /* .h2 {
