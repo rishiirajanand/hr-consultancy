@@ -147,7 +147,7 @@ iframe{
   }
   
   .glow-on-hover:hover {
-    transform: translateX(10px); /* Adjust the value as needed */
+    transform: translateX(10px); 
   }
   
 
