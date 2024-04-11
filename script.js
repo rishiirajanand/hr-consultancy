@@ -9,6 +9,9 @@ function hidePreloader() {
   preloader.style.display = "none";
 }
 setTimeout(hidePreloader, 1500);
+
+// GSAP
+
 // Navbar
 function setActive(element) {
   let lis = document.querySelectorAll(".nav-content ul li");
