@@ -17,7 +17,7 @@ body{
 }
 
 .main-container{
-    max-width: 690px;
+    max-width: 80%;
     /* border: 2px solid black; */
     margin: 5% 0px;
     
@@ -44,6 +44,7 @@ body{
 .author-box img{
     width: 100%;
     margin-bottom: 1rem;
+    height: 30%;
 }
 
 .author-box ul{
@@ -62,7 +63,7 @@ iframe {
 }
 
 .iframe-container {
-    width: 750px; /* Set the width of the iframe container */
+    width: 100%; /* Set the width of the iframe container */
     height: 413px; /* Set the height of the iframe container */
     position: relative; /* Positioning for the iframe and animated border */
     overflow: hidden; /* Hide overflow to prevent border clipping */
@@ -383,13 +384,9 @@ svg{font-weight:bold;max-width:600px;height:100%;}
 
 /*----------------------------------------------------Responsible------------------------------------------------------------------*/
 @media (max-width:1000px) {
-    .author-box{
-        margin-left: 8%;
-    }
 
     .heading-box h1{
-        margin-left: 8%;
-        width: 400px;
+        width: 80%;
         font-weight: 800;
         font-size: 50px;
         color: #00274A;
@@ -397,7 +394,7 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     .heading-box .para{
-        width: 90%;
+        width: 80%;
         font-size: 20px;
         color: black;
         line-height: 2.1rem;
@@ -406,8 +403,9 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     .author-box img{
-        width: 90%;
+        width: 100%;
         margin-bottom: 1rem;
+        height: 380px;
     }
 
     .author-box ul{
@@ -417,19 +415,14 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     iframe{
-        width: 90%;
+        width: 50%;
         margin-top: 2rem;
     }
 }
 
 @media (max-width:800px) {
-    .author-box{
-        margin-left: 16%;
-    }
 
     .heading-box h1{
-        margin-left: 16%;
-        width: 400px;
         font-weight: 700;
         font-size: 40px;
         color: #00274A;
@@ -437,7 +430,6 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     .heading-box .para{
-        width: 80%;
         font-size: 18px;
         color: black;
         line-height: 1.8rem;
@@ -446,8 +438,9 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     .author-box img{
-        width: 80%;
+        width: 100%;
         margin-bottom: 1rem;
+        height: 30%;
     }
 
     .author-box ul{
@@ -457,20 +450,14 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     iframe{
-        height: 200px;
+        height: 250px;
         width: 80%;
         margin-top: 1.5rem;
     }
 }
 
 @media (max-width:600px) {
-    .author-box{
-        margin-left: 25%;
-    }
-
     .heading-box h1{
-        margin-left: 25%;
-        width: 300px;
         font-weight: 650;
         font-size: 35px;
         color: #00274A;
@@ -487,7 +474,7 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     .author-box img{
-        width: 70%;
+        width: 100%;
         margin-bottom: 1rem;
     }
 
@@ -498,32 +485,16 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 
     iframe{
-        height: 150px;
-        width: 70%;
         margin-top: 1rem;
+    }
+    .iframe-container{
+        height: 220px;
     }
 }
 
-@media (max-width:525px) {
-    .heading-box h1{
-        width: 240px;
-        font-weight: 600;
-        font-size: 30px;
-        color: #00274A;
-        margin-bottom: 0.8rem;
-    }
-
-    iframe{
-        height: 120px;
-        width: 70%;
-        margin-top: 1rem;
-    }
-
-    .author-box ul{
-        width: 70%;
-        padding-left: 3rem;
-        font-size: 1rem;
-        line-height: 1.4rem;
+@media (max-width:500px) {
+    .iframe-container{
+        height: 190px;
     }
 }
 
