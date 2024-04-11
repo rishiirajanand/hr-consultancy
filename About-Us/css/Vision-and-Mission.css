@@ -298,7 +298,7 @@ body{
 
 @media (max-width:600px) {
     .main-container{
-        max-width: 380px;
+        max-width: 450px;
         margin: 2.5% 0px; 
     }
 
@@ -319,9 +319,23 @@ body{
     }
 }
 
+@media (max-width:500px) {
+  .main-container{
+      max-width: 400px;  
+  }
+
+  .btn-flip {
+    padding:0px 20%;
+  }
+}
+
 @media (max-width:450px) {
-    .main-container{
-        max-width: 300px;
+  .btn-flip {
+    padding:0px 18%;
+    
+  }  
+  .main-container{
+        max-width: 350px;
         margin: 2.2% 0px; 
     }
 
@@ -342,4 +356,34 @@ body{
     }
 }
 
+@media (max-width:450px) {
+  .heading-box h1{
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+  .btn-flip {
+    padding:0px 15%;
+    
+  }  
+  .main-container{
+        max-width: 300px;
+        margin: 2.2% 0px; 
+    }
+  }
+
+  @media (max-width:330px) {
+    .heading-box h1{
+      font-size: 22px;
+      margin-bottom: 1rem;
+  }
+    .btn-flip {
+      padding:0px 10%;
+      
+    }  
+    .main-container{
+          max-width: 250px;
+          margin: 2.2% 0px; 
+      }
+    }
+  
 
