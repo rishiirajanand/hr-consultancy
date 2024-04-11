@@ -166,4 +166,35 @@ p{
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+.h3{
+    font-size: 24px;
+        font-weight: bold;
+        transition: transform 0.3s, box-shadow 0.3s;
+}
+.h3:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+.image-wrapper {
+    display: inline-block;
+    position: relative;
+}
 
+.hover-image {
+    transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover .hover-image {
+    transform: translate(0, -10px); /* Move the image up by 10 pixels */
+}
+
+
+.senior::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: typewriter-char 0.5s steps(10) infinite;
+}

@@ -80,3 +80,33 @@ img{
     padding: 0 5px;
   }
 }
+.list-container {
+  list-style-type: disc;
+  padding: 0;
+}
+
+.list-item {
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.list-item span {
+  display: block;
+  padding: 10px;
+}
+
+.list-item:hover {
+  animation: floatAnimation 0.5s ease forwards;
+}
+
+@keyframes floatAnimation {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      /* float: left; */
+      border-radius: 10px;
+  }
+}

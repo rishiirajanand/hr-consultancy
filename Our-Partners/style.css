@@ -102,3 +102,19 @@ iframe{
         margin-top: 32px; 
     }
 }
+.list-container {
+    /* list-style-type: none; */
+    padding: 0;
+}
+
+.list-container li {
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    padding: 10px; /* Initial padding */
+}
+
+.list-container li:hover {
+    padding: 15px; /* Padding on hover */
+   background-color: gray;
+    border-radius: 10px;
+}
