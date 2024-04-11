@@ -1,15 +1,16 @@
 // Preloader
-let body = document.getElementsByTagName("body")[0];
+let preloader = document.getElementById("preloader");
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+function showScrollButton() {
+  scrollToTopBtn.style.display = "flex";
+}
+setTimeout(showScrollButton, 1500);
+function hidePreloader() {
+  preloader.style.display = "none";
+}
+setTimeout(hidePreloader, 1500);
 
-window.addEventListener("load", function () {
-  var preloader = document.querySelector(".preloader");
-  document.querySelector(".container").style.display = "none";
-  setTimeout(function () {
-    preloader.style.display = "none";
-    document.querySelector(".container").style.display = "block";
-    body.style.backgroundColor = "transparent";
-  }, 2900);
-});
+// GSAP
 
 // Navbar
 function setActive(element) {
@@ -111,4 +112,11 @@ function playVideo() {
   thumbnail.style.display = "none";
   video.style.display = "block";
   video.src += "&autoplay=1";
+}
+
+// ScrollToTop
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

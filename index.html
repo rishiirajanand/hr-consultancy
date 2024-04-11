@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HR Consultancy</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
@@ -12,19 +16,34 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Pre-Loader -->
-    <div class="preloader">
-      <span class="tile-1"></span>
-      <span class="tile-2"></span>
-      <span class="tile-3"></span>
-      <span class="tile-4"></span>
-    </div>
+<!-- Preloader -->
+<div id="preloader">
+<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+	<div class="wheel"></div>
+	<div class="hamster">
+		<div class="hamster__body">
+			<div class="hamster__head">
+				<div class="hamster__ear"></div>
+				<div class="hamster__eye"></div>
+				<div class="hamster__nose"></div>
+			</div>
+			<div class="hamster__limb hamster__limb--fr"></div>
+			<div class="hamster__limb hamster__limb--fl"></div>
+			<div class="hamster__limb hamster__limb--br"></div>
+			<div class="hamster__limb hamster__limb--bl"></div>
+			<div class="hamster__tail"></div>
+		</div>
+	</div>
+	<div class="spoke"></div>
+</div>
+</div>
+
     <!-- Navbar -->
-    <div class="container" style="display: none">
+    <div id="main" class="container">
       <nav>
         <a href="./index.html"
           ><img src="./About-Us/images/logo.jpg" alt="logo"
@@ -332,17 +351,53 @@
           </div>
         </div>
         <div class="home-contact">
-          <div class="contact-us"></div>
-          <div class="contact-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811420000!5m2!1sen!2sin"
-              width="700"
-              height="500"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="cont">
+            <div class="info move-left">
+              <div class="location">
+                <h3>INDIA</h3>
+              </div>
+              <div class="location">
+                <h3>PUNE,WAKAD</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-head">
+                  <span>CONTACT</span>
+                  <hr />
+                </div>
+                <div class="details-box">
+                  <p>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <span>+91-1234567891</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contact@gmail.com</span>
+                  </p>
+                </div>
+                <div class="contact-head">
+                  <span>ADDRESS</span>
+                  <hr />
+                </div>
+                <div class="address">
+                  <i class="fa-solid fa-location-dot"></i>
+              
+                  <p>Shahrjah Media City <br>334069, Sharjah, UAE</p>
+            
+                </div>
+              </div>
+            </div>
+      
+            <div class="map move-right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.626370555253!2d73.75072997465378!3d18.590875967024022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c13b80c53297%3A0x86f87e9d1f5568dd!2sDigikull!5e0!3m2!1sen!2sin!4v1711811420000!5m2!1sen!2sin"
+                width="600"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div class="author-box">
@@ -455,7 +510,18 @@
           </div>
         </div>
       </footer>
+    
     </div>
+    <button onclick="scrollToTop()" class="scrollTop" id="scrollToTopBtn">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
   </body>
 </html>
