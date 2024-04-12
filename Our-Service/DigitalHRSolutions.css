@@ -298,6 +298,24 @@ body {
     width: 0;
   }
   to {
-    width: 100%;
+    width:auto;
   }
+}
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+ border-radius: 10px;
+  width: fit-content;
+}
+.Good1:hover{
+  transform: scale(1.1); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  width: fit-content;
+  border-radius: 10px;
+  padding: 8px;
 }

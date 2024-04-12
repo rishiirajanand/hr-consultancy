@@ -48,6 +48,15 @@
       margin-bottom: 1.71429em;
       opacity: 0.92;
 }
+.p {
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.p:hover {
+  color: gray; /* Change text color to gray on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
 
 
 

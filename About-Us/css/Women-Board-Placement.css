@@ -498,3 +498,18 @@ svg{font-weight:bold;max-width:600px;height:100%;}
     }
 }
 
+ul {
+    /* list-style: none; */
+  }
+  
+  li {
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); 
+    transform: translateY(-5px); 
+    padding: 8px;
+    border-radius: 8px;
+
+  }

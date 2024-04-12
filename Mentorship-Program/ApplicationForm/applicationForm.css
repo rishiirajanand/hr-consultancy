@@ -315,3 +315,15 @@ button:disabled {
     padding: 7px;
         }
     }
+    .sideParagraph {
+        transition: all 0.3s ease;
+        float: left;
+        height: fit-content;
+      }
+    
+      .sideParagraph:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        height: fit-content;
+        border-radius: 10px;
+      }
