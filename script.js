@@ -52,12 +52,14 @@ setTimeout(hidePreloader, 1500);
 // GSAP
 
 // Navbar
-function setActive(element) {
-  let lis = document.querySelectorAll(".nav-content ul li");
-  lis.forEach(function (li) {
-    li.classList.remove("active");
+function toggleActive(element) {
+  var elements = document.querySelectorAll(".nav-content ul li");
+
+  elements.forEach(function (el) {
+    el.classList.remove("active");
   });
-  element.parentElement.classList.add("active");
+
+  element.classList.add("active");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
