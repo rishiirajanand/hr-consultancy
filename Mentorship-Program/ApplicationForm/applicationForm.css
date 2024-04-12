@@ -28,6 +28,7 @@
     border: 1px solid #ddd;
     margin-bottom: 80px;
     border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(9, 28, 7, 0.2);
 }
 
 .formGrp {
@@ -61,7 +62,7 @@ input {
 .inp {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    height: 42px;
+    height: 38px;
 }
 .errorMsg{
     color: red;
@@ -108,6 +109,7 @@ button:disabled {
     width: 270px;
     font-size: 20px;
     box-sizing: border-box;
+    text-align: justify;
     /* font-weight: 700; */
 }
 
@@ -116,35 +118,33 @@ button:disabled {
 @media (max-width:1024px) {
     .heading {
         font-size: 68px;
-        text-align: center;
     }
     .parent {
         gap: 27px;
     }
     .sideParagraph{
         width: 265px;
-    font-size: 18px;
+        font-size: 18px;
     }
-    }
+}
 
 @media (max-width:768px) {
     .heading {
         font-size: 58px;
-    text-align: center;
+        text-align: center;
     }
     .parent {
         gap: 20px;
     }
     .sideParagraph{
         width: 257px;
-    font-size: 16px;
+        font-size: 16px;
     }
     .container{
         width: 400px;
     }
     .formGrp {
         margin-bottom: 5px;
-        padding: 0px 30px;
         font-size: 16px;
     }
     .fileText {
@@ -168,45 +168,65 @@ button:disabled {
     
     .inp {
         height: 35px;
+        width: 90%;
     }
     button {
         width: 145px;
-    height: 60px;
-    margin: 20px 30px;
-    font-size: 18px;
-    border-radius: 10px;
+        height: 60px;
+        margin: 20px 30px;
+        font-size: 18px;
+        border-radius: 10px;
     }
     .errorMsg{
         font-size: 14px;
-    padding: 7px;
+        padding: 7px;
     }
     #successMsg{
         font-size: 14px;
-    padding: 7px;
+        padding: 7px;
     }
+}
+
+    @media (max-width:710px) {
+        .container{
+            width: 330px;
+        }
+        .formGrp {
+            margin-bottom: 0px;
+        }
+        label{
+            padding-top: 15px;
+        }
+        .errorMsg {
+            padding: 0px;
+        }
     }
-    @media (max-width:500px) {
+    @media (max-width:640px) {
+        .inp {
+            height: 35px;
+            width: 100%;
+        }
+        .container{
+            width: 400px;
+        }
         .heading {
             font-size: 40px;
-        text-align: center;
+            text-align: center;
         }
         .parent {
             flex-direction: column;
             align-items: center;
         }
         .sideParagraph{
-            width: 300px;
+            width: 400px;
             font-size: 14px;
             margin-top: -80px;
             margin-bottom: 15px;
         }
-        .container{
-            width: 350px;
-        }
         .formGrp {
             margin-bottom: 4px;
             padding: 0px 30px;
-            font-size: 14px;
+            font-size: 17px;
         }
         .fileText {
             font-size: 11px;
@@ -214,11 +234,12 @@ button:disabled {
         
         .file{
             width: 189px;
-    height: 40px;
-    font-size: 14px;
+            height: 40px;
+            font-size: 14px;
         }
         label {
             padding-top: 15px;
+            font-size: 17px;
         }
         
         input {
@@ -226,10 +247,7 @@ button:disabled {
             margin-top: 6px;
             padding: 5px 0px;
         }
-        
-        .inp {
-            height: 30px;
-        }
+       
         button {
             width: 120px;
             height: 50px;
@@ -250,6 +268,37 @@ button:disabled {
     padding: 7px;
         }
     }
+
+    @media (max-width:470px){
+        .container{
+            width: 350px;
+        }
+        .sideParagraph{
+            width: 350px;
+        }
+        .inp {
+            height: 30px;
+            width: 100%;
+        }
+    }
+
+    
+    @media (max-width:400px){
+        .container{
+            width: 310px;
+        }
+        .sideParagraph{
+            width: 310px;
+        }
+        .inp {
+            height: 30px;
+            width: 100%;
+        }
+        .heading {
+            font-size: 30px;
+        }
+    }
+
     @media (max-width:330px){
         .heading {
             font-size: 30px;
@@ -260,7 +309,7 @@ button:disabled {
             align-items: center;
         }
         .sideParagraph{
-            width: 190px;
+            width: 250px;
             font-size: 10px;
             margin-top: -80px;
             margin-bottom: 15px;
