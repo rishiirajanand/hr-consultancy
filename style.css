@@ -770,26 +770,42 @@ ul .box {
   border: 0px solid #fff;
   transition: all 1s;
 }
-.btn:after,
-.btn2:after {
+.btn:after {
   top: -1px;
   left: -1px;
   border-top: 7px solid white;
   border-left: 7px solid white;
 }
-.btn:before,
-.btn2:before {
+.btn2:after {
+  top: -1px;
+  left: -1px;
+  border-top: 7px solid #c4e4ff;
+  border-left: 7px solid #c4e4ff;
+}
+.btn:before {
   bottom: -1px;
   right: -1px;
   border-bottom: 7px solid white;
   border-right: 7px solid white;
 }
-.btn:hover,
+.btn2:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 7px solid #c4e4ff;
+  border-right: 7px solid #c4e4ff;
+}
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #1d2031;
+}
+
 .btn2:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   background-color: #1d2031;
 }
+
 .btn:hover:before,
 .btn:hover:after {
   width: 95%;
