@@ -176,3 +176,27 @@
 .abc{
     margin-bottom: 100px;
 }
+.text-ul {
+    list-style-type: none;
+    padding: 0;
+}
+.text-ul li {
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for shadow effect and transform */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Add padding for spacing */
+}
+.text-ul li b {
+    font-weight: bold;
+}
+/* Define hover styles for individual list items */
+.text-ul li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Apply shadow on hover */
+    transform: translateY(-5px); /* Move the element up by 5px */
+}
+.button:hover{
+    background-color: rgb(156, 113, 56);
+    color: black;
+    font-weight: bold;
+}

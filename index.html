@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -44,127 +45,143 @@
 
     <!-- Navbar -->
     <div id="main" class="container">
-      <nav>
-        <a href="./index.html"
-          ><img src="./About-Us/images/logo.jpg" alt="logo"
-        /></a>
-        <div class="nav-content">
-          <ul>
-            <li class="active box">
-              <a href="index.html" onclick="setActive(this)">Home</a>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a
-                href="./About-Us/pages/our-clients.html"
-                onclick="setActive(this)"
-                >About Us</a
-              >
-              <div class="dropdown-content">
-                <a href="./About-Us/pages/our-clients.html">Our Clients</a>
-                <a href="./About-Us/pages/Testimonials.html">Testimonials</a>
-                <a href="./About-Us/pages/Women-Board-Placement.html"
-                  >Women Board Placement</a
-                >
-                <a href="./About-Us/pages/Vision-and-Mission.html"
-                  >Vision & Mission</a
-                >
-                <a href="./About-Us/pages/Media-Page.html">Media Page</a>
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="/Our-Team/LocalSeniorTeam.html" onclick="setActive(this)"
-                >Our Team</a
-              >
-              <div class="dropdown-content">
-                <a href="/Our-Team/LocalSeniorTeam.html">Local Senior Team</a>
-                <a href="/Our-Team/globalTeam.html">Global Team</a>
-                <a href="/Our-Team/afrikaDesk.html">Africa Desk</a>
-                <a href="/Our-Team/ourPeopleInafrica.html"
-                  >Our People in Africa</a
-                >
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a
-                href="/Our-Service/our_services_servicesInNutshell.html"
-                onclick="setActive(this)"
-                >Our Services</a
-              >
-              <div class="dropdown-content">
-                <a href="/Our-Service/our_services_servicesInNutshell.html"
-                  >Services-In a Nutshell</a
-                >
-                <a href="/Our-Service/executiveRequirement.html"
-                  >Executive Recruitment</a
-                >
-                <a href="/Our-Service/HRConsultancy.html">HR Consultancy</a>
-                <a href="/Our-Service/Assessment&Coaching.html"
-                  >Assessment & Coaching</a
-                >
-                <a href="/Our-Service/DigitalHRSolutions.html"
-                  >Digital HR Solutions</a
-                >
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a href="/Our-Partners/ourPartners.html" onclick="setActive(this)"
-                >Our Partners</a
-              >
-              <div class="dropdown-content">
-                <a href="/Our-Partners/ourPartners.html"
-                  >CEB SHL Tool Management</a
-                >
-                <a href="/Our-Partners/profitOKRs.html">Profit OKRs</a>
-                <a href="/Our-Partners/riseSmart.html">RiseSmart</a>
-              </div>
-            </li>
-            <li
-              class="box"
-              onmouseover="toggleDropdown(this, true)"
-              onmouseout="toggleDropdown(this, false)"
-            >
-              <a
-                href="/Mentorship-Program/WomenMentorship/womenMentorship.html"
-                onclick="setActive(this)"
-                >Mentorship Program</a
-              >
-              <div class="dropdown-content">
-                <a
-                  href="/Mentorship-Program/WomenMentorship/womenMentorship.html"
-                  >Women Mentorship Program</a
-                >
-                <a
-                  href="/Mentorship-Program/ApplicationForm/applicationForm.html"
-                  >Application Form</a
-                >
-              </div>
-            </li>
-            <li class="box">
-              <a href="#" onclick="setActive(this)">Insight Blog</a>
-            </li>
-            <li class="box">
-              <a href="/Contact-Us/contact.html" onclick="setActive(this)"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+      <nav class="nav1">
+        <div class="logo">
+          <img src="/Assets/navbar/logo.jpg" alt="logo"/>
         </div>
+        <input type="checkbox" name="" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">About Us</a>
+            <div class="dropdown">
+              <a href=""><p>Our Clients</p></a>
+              <a href=""><p>Testimonials</p></a>
+              <a href=""><p>Women Board Placement</p></a>
+              <a href=""><p>Vision & Mission</p></a>
+              <a href=""><p>MediaPage</p></a>
+            </div>
+          </li>
+          <li><a href="#">Our Team</a>
+            <div class="dropdown">
+              <a href=""><p>Local Senior Team</p></a>
+              <a href=""><p>Global Team</p></a>
+              <a href=""><p>Africa Desk</p></a>
+              <a href=""><p>Our People in Africa</p></a>
+            </div>
+          </li>
+          <li><a href="#">Our Services</a>
+            <div class="dropdown">
+              <a href=""><p>Services - In a Nutshell</p></a>
+              <a href=""><p>Executive Recruitment</p></a>
+              <a href=""><p>HR Consultancy</p></a>
+              <a href=""><p>Assessment & Coaching</p></a>
+              <a href=""><p>Digital HR Solutions</p></a>
+            </div>
+          </li>
+          <li><a href="#">Our Partners</a>
+            <div class="dropdown">
+              <a href=""><p>CEB SHL Tool Management</p></a>
+              <a href=""><p>Profit OKRs</p></a>
+              <a href=""><p>RiseSmart</p></a>
+            </div>
+          </li>
+          <li><a href="#">Mentorship Program</a>
+            <div class="dropdown">
+              <a href=""><p>Women Mentorship Program</p></a>
+              <a href=""><p>Application Form</p></a>
+            </div>
+          </li>
+          <li><a href="#">Insights Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <nav>
+          <img
+            src="/Assets/navbar/logo.jpg"
+            alt="logo"
+          />
+          <div class="nav-content">
+            <ul>
+              <li class="active box">
+                <a href="#" onclick="setActive(this)">Home</a>
+              </li>
+              <li
+                class="box"
+                onmouseover="toggleDropdown(this, true)"
+                onmouseout="toggleDropdown(this, false)"
+              >
+                <a href="#" onclick="setActive(this)">About Us</a>
+                <div class="dropdown-content">
+                  <a href="#">Our Clients</a>
+                  <a href="#">Testimonials</a>
+                  <a href="#">Women Board Placement</a>
+                  <a href="#">Vision & Mission</a>
+                  <a href="#">Media Page</a>
+                </div>
+              </li>
+              <li
+                class="box"
+                onmouseover="toggleDropdown(this, true)"
+                onmouseout="toggleDropdown(this, false)"
+              >
+                <a href="#" onclick="setActive(this)">Our Team</a>
+                <div class="dropdown-content">
+                  <a href="#">Local Senior Team</a>
+                  <a href="#">Global Team</a>
+                  <a href="#">Africa Desk</a>
+                  <a href="#">Our People in Africa</a>
+                </div>
+              </li>
+              <li
+                class="box"
+                onmouseover="toggleDropdown(this, true)"
+                onmouseout="toggleDropdown(this, false)"
+              >
+                <a href="#" onclick="setActive(this)">Our Services</a>
+                <div class="dropdown-content">
+                  <a href="#">Services-In a Nutshell</a>
+                  <a href="#">Executive Recruitment</a>
+                  <a href="#">HR Consultancy</a>
+                  <a href="#">Assessment & Coaching</a>
+                  <a href="#">Digital HR Solutions</a>
+                </div>
+              </li>
+              <li
+                class="box"
+                onmouseover="toggleDropdown(this, true)"
+                onmouseout="toggleDropdown(this, false)"
+              >
+                <a href="#" onclick="setActive(this)">Our Partners</a>
+                <div class="dropdown-content">
+                  <a href="#">CEB SHL Tool Management</a>
+                  <a href="#">Executive Recruitment</a>
+                  <a href="#">HR Consultancy</a>
+                </div>
+              </li>
+              <li
+                class="box"
+                onmouseover="toggleDropdown(this, true)"
+                onmouseout="toggleDropdown(this, false)"
+              >
+                <a href="#" onclick="setActive(this)">Mentorship Program</a>
+                <div class="dropdown-content">
+                  <a href="#">Women Mentorship Program</a>
+                  <a href="#">Application Form</a>
+                </div>
+              </li>
+              <li class="box">
+                <a href="#" onclick="setActive(this)">Insight Blog</a>
+              </li>
+              <li class="box">
+                <a href="#" onclick="setActive(this)">Contact Us</a>
+              </li>
+            </ul>
+          </div>
       </nav>
 
       <!-- Hero Section -->
@@ -287,8 +304,7 @@
             />
             <iframe
               id="youtube-video"
-              width="730"
-              height="398"
+             
               src="https://www.youtube.com/embed/Hm4AahC83N0?si=Uj_jlIxMnbNh5EbN"
               title="YouTube video player"
               frameborder="0"
@@ -380,7 +396,6 @@
                 </div>
                 <div class="address">
                   <i class="fa-solid fa-location-dot"></i>
-              
                   <p>Shahrjah Media City <br>334069, Sharjah, UAE</p>
             
                 </div>
@@ -401,19 +416,13 @@
           </div>
         </div>
         <div class="author-box">
-          <p class="para">
-            “A trusted partner that delivers the highest results. We consider
-            Kestria as our trusted partner. Kestria team has great knowledge of
-            our business and a deep understating of our culture, which have
-            positively impacted our business relationship through many many
-            successful placements, especially at the C-level. I highly recommend
-            Kestria to all potential clients who expect the highest results.”
+          <p id="paragraph" class="para">
           </p>
           <div class="author-name">
             <hr />
 
-            <p>
-              Ahmed Safwat, HR Director - Egypt & Algeria, Cargill
+            <p id="writer">
+              
             </p>
             <button class="test-btn">
               More Testimonials <i class="ri-arrow-right-line"></i>

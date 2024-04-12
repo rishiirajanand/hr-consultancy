@@ -112,17 +112,18 @@ body{
   }
   
   .btn-1:hover {
-    background-color:aqua;
+    background-color:rgb(199, 144, 77);
     font-weight: 900;
     letter-spacing: 1px;
     color: black;
   }
   
   .btn-1:hover rect {
-    stroke-width: 5;
+    stroke-width: 12;
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    ;
   }
   
   .btn-1:hover {

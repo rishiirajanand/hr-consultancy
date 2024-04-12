@@ -269,3 +269,22 @@ ul .box {
     display: flex;
     justify-content: end;
   }
+  .card-body {
+    transition: all 0.3s ease;
+  }
+  
+  .card-body:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); 
+    position: relative; 
+    z-index: 1; 
+    border-radius: 10px;
+    background-color:#bdbcb9;
+  }
+  img {
+    transition: transform 0.5s ease; 
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
