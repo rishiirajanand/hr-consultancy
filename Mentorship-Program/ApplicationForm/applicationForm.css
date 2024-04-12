@@ -186,6 +186,12 @@ button:disabled {
         padding: 7px;
     }
 }
+@media (max-width:690px) {
+    .heading {
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+}
 
     @media (max-width:710px) {
         .container{
