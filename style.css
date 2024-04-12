@@ -495,10 +495,11 @@ ul .box {
 
 /*----------------------------------------------------2nd nav-----------------------------------------------------*/
 .nav1 {
+  /* overflow-y: hidden; */
   z-index: 15;
   width: 100%;
   height: 80px;
-  position: absolute;
+  position: fixed;
   background-color: #f8f7f4;
   display: none;
   align-items: center;
@@ -517,6 +518,7 @@ ul .box {
 .nav1 ul {
   display: none;
   list-style: none;
+  overflow-y: hidden;
 }
 
 .nav1 ul li {
@@ -1565,7 +1567,19 @@ footer {
   bottom: unset;
   transition-duration: 0.3s;
 }
-
+@media (max-width: 743px) {
+  .cards {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .card {
+    padding: 20px;
+    margin: 20px 20px;
+    height: 370px;
+  }
+}
 @media (max-width: 830px) {
   .slider {
     height: 350px;
