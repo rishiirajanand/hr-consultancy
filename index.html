@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/Assets/navbar/navbar.css">
-  <link rel="stylesheet" href="/Assets/footer/footer.css">
   </head>
   <body>
 <!-- Preloader -->
@@ -49,7 +47,7 @@
     <div id="main" class="container">
       <nav class="nav1">
         <div class="logo">
-            <a href="/index.html"><img src="/Assets/navbar/logo.jpg" alt="logo"/></a>
+            <a href="/index.html"><img src="./logo.jpg" alt="logo"/></a>
         </div>
         <input type="checkbox" name="" id="click">
         <label for="click" class="menu-btn">
@@ -105,15 +103,15 @@
         <a href="/index.html"><img src="/Assets/navbar/logo.jpg" alt="logo"/></a>
             <div class="nav-content">
             <ul>
-                <li class="active box">
-                <a href="/index.html" onclick="setActive(this)">Home</a>
+                <li onclick="toggleActive(this)" class="active box">
+                <a href="/index.html">Home</a>
                 </li>
-                <li
+                <li onclick="toggleActive(this)"
                 class="box"
                 onmouseover="toggleDropdown(this, true)"
                 onmouseout="toggleDropdown(this, false)"
                 >
-                <a href="/About-Us/pages/our-clients.html" onclick="setActive(this)">About Us</a>
+                <a href="/About-Us/pages/our-clients.html" >About Us</a>
                 <div class="dropdown-content">
                     <a href="/About-Us/pages/our-clients.html"><p>Our Clients</p></a>
                     <a href="/About-Us/pages/Testimonials.html"><p>Testimonials</p></a>
@@ -122,12 +120,12 @@
                     <a href="/About-Us/pages/Media-Page.html"><p>MediaPage</p></a>
                 </div>
                 </li>
-                <li
+                <li onclick="toggleActive(this)"
                 class="box"
                 onmouseover="toggleDropdown(this, true)"
                 onmouseout="toggleDropdown(this, false)"
                 >
-                <a href="/Our-Team/LocalSeniorTeam.html" onclick="setActive(this)">Our Team</a>
+                <a href="/Our-Team/LocalSeniorTeam.html">Our Team</a>
                 <div class="dropdown-content">
                     <a href="/Our-Team/LocalSeniorTeam.html"><p>Local Senior Team</p></a>
                 <a href="/Our-Team/globalTeam.html"><p>Global Team</p></a>
@@ -135,12 +133,12 @@
                 <a href="/Our-Team/ourPeopleInafrica.html"><p>Our People in Africa</p></a>
                 </div>
                 </li>
-                <li
+                <li onclick="toggleActive(this)"
                 class="box"
                 onmouseover="toggleDropdown(this, true)"
                 onmouseout="toggleDropdown(this, false)"
                 >
-                <a href="#" onclick="setActive(this)">Our Services</a>
+                <a href="#">Our Services</a>
                 <div class="dropdown-content">
                     <a href="/Our-Service/our_services_servicesInNutshell.html"><p>Services - In a Nutshell</p></a>
                 <a href="/Our-Service/executiveRequirement.html"><p>Executive Recruitment</p></a>
@@ -149,34 +147,34 @@
                 <a href="/Our-Service/Digital-hr-solutions(rb).html"><p>Digital HR Solutions</p></a>
                 </div>
                 </li>
-                <li
+                <li onclick="toggleActive(this)"
                 class="box"
                 onmouseover="toggleDropdown(this, true)"
                 onmouseout="toggleDropdown(this, false)"
                 >
-                <a href="/Our-Partners/ourPartners.html" onclick="setActive(this)">Our Partners</a>
+                <a href="/Our-Partners/ourPartners.html">Our Partners</a>
                 <div class="dropdown-content">
                     <a href="/Our-Partners/ourPartners.html"><p>CEB SHL Tool Management</p></a>
                 <a href="/Our-Partners/profitOKRs.html"><p>Profit OKRs</p></a>
                 <a href="/Our-Partners/riseSmart.html"><p>RiseSmart</p></a>
                 </div>
                 </li>
-                <li
+                <li onclick="toggleActive(this)"
                 class="box"
                 onmouseover="toggleDropdown(this, true)"
                 onmouseout="toggleDropdown(this, false)"
                 >
-                <a href="/Mentorship-Program/WomenMentorship/womenMentorship.html" onclick="setActive(this)">Mentorship Program</a>
+                <a href="/Mentorship-Program/WomenMentorship/womenMentorship.html">Mentorship Program</a>
                 <div class="dropdown-content">
                     <a href="/Mentorship-Program/WomenMentorship/womenMentorship.html"><p>Women Mentorship Program</p></a>
                 <a href="/Mentorship-Program/ApplicationForm/applicationForm.html"><p>Application Form</p></a>
                 </div>
                 </li>
-                <li class="box">
-                <a href="/Insights-Blog/inside.html" onclick="setActive(this)">Insight Blog</a>
+                <li onclick="toggleActive(this)" class="box">
+                <a href="/Insights-Blog/inside.html" >Insight Blog</a>
                 </li>
-                <li class="box">
-                <a href="/Contact-Us/contact.html" onclick="setActive(this)">Contact Us</a>
+                <li onclick="toggleActive(this)" class="box">
+                <a href="/Contact-Us/contact.html" >Contact Us</a>
                 </li>
             </ul>
             </div>

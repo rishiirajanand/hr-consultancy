@@ -91,6 +91,11 @@ iframe{
         font-size: 22px;
     }
 }
+@media (max-width:690px) {
+    .heading {
+        margin-top: 100px;
+    }
+}
 
 @media (max-width:680px) {
     .parent {

@@ -10,7 +10,7 @@ textarea {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #222;
+  color: #222222;
 }
 
 h1,
@@ -19,14 +19,19 @@ h2 {
   font-variant-ligatures: common-ligatures;
 }
 
+.imgg {
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
 h1 {
-  font-size: 4.1875em;
+  font-size: 3.7em;
   line-height: 1.07462686567164em;
   margin: 0;
   margin-bottom: 0.71641791044776em;
   font-weight: normal;
   color: #00274a;
   max-width: 800px;
+  text-wrap: nowrap;
 }
 
 @media only screen and (max-width: 501px) {
@@ -110,15 +115,6 @@ h1 small {
 }
 
 /* ************* FOOTER ************/
-.text:hover, .article-big-text:hover {
-  color: red;
-  font-weight: bold;
-}
-.onecol h1:hover{
-color: red;
-}
-
-
 
 @keyframes typewriter {
   from {
