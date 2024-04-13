@@ -49,11 +49,7 @@
     line-height: 1.26316em;
     margin-bottom: 0.63158em;
 }
-p{
-    text-align: left;
-    margin-top: 10px;
-    font-size: 25px;
-}
+
 .consultant{
     max-width: 980px;
     display: flex;
@@ -262,7 +258,6 @@ p{
     }
     p{
         font-size: 19px;
-        text-align: justify;
     }
     .senior {
         text-align: center;
@@ -272,6 +267,7 @@ p{
     .box img{
         width: 220px
     }
+}
 
 .image-wrapper:hover .hover-image {
     transform: translate(0, -10px); /* Move the image up by 10 pixels */
