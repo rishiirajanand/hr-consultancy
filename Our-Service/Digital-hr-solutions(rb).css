@@ -71,5 +71,34 @@ img{
     }
   }
 
+  
+.text-head {
+    animation: fade-in1 2.5s;
+  }
+  
+  .text-info {
+    animation: fade-in1 4.5s;
+  }
+  
+  .text-subinfo {
+    animation: fade-in2 4.5s;
+  }
+  
+  @keyframes fade-in1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.92;
+    }
+  }
  
 
