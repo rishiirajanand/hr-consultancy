@@ -17,27 +17,27 @@ body{
 
 .main-container{
     max-width: 690px;
-    /* border: 2px solid black; */
-    margin: 6% 0px;
-    
+    margin: 1rem 0 5rem 0;
 }
 
-.heading-box{
+/* .heading-box{
     margin-bottom: 2rem;
-}
-.heading-box h1{
+} */
+
+.h1{
     font-size: 60px;
     color: #00274A;
 }
 
 .heading-box .para{
-    font-size: 22px;
+    font-size: 20px;
     color: black;
     font-weight: 600;
-    line-height: 2.3rem;
-    /* text-align: center;   */
+    line-height: 2rem;
+    text-align: center;
     font-style: italic;
     margin-bottom: 2rem;
+    opacity: 70%;
 }
 
 
@@ -51,7 +51,6 @@ body{
 
 
 .author-name{
-    /* border: 1px solid black; */
     width: 300px;
 }
 
@@ -61,174 +60,31 @@ body{
     opacity: 70%;
 }
 
- /* Assuming you have defined the red color */
-
- .btn-1 {
-    background-color:lightskyblue;
-    border: 2px solid white; /* Add border */
-    font-weight: 100;
-    position: relative;
-    overflow: hidden;
-    padding: 15px 30px;
-    outline: none;
-    color:black;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-    transition: all 0.35s linear;
-    /* color: gray; */
-    padding: 0px 50px;
-    margin-top: 1rem;
-    opacity: 70%;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
-    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  */
-    box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.3), /* First layer of shadow */
-    0 0 30px rgba(0, 0, 0, 0.1), /* Second layer of shadow */
-    0 0 40px 10px rgba(0, 0, 0, 0.2); /* Third layer of shadow */
-
-
-    border-radius: 10px;
-  }
-  
-  .btn-1 svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .btn-1 rect {
-    fill: none;
-    stroke: black;
-    stroke-width: 0;
-    stroke-dasharray: 422, 0;
-    transition: all 0.35s linear;
-    outline: transparent;
-    border:none;
-    background-color: #00274A;;
-   
-  }
-  
-  .btn-1:hover {
-    background-color:rgb(199, 144, 77);
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: black;
-  }
-  
-  .btn-1:hover rect {
-    stroke-width: 12;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    ;
-  }
-  
-  .btn-1:hover {
-    text-decoration: none;
-  }
-  .para {
+.para {
     padding: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 15px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  */
-  }
+}   
+
   
-  .para:hover {
-    transform: scale(1.05); /* Increase size on hover */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Super fantastic box shadow on hover */
-  }
-  .btn:link,
-  .btn:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 15px 40px;
-      display: inline-block;
-      border-radius: 100px;
-      transition: all .2s;
-      position: relative; /* Changed position to relative */
-  }
-  
-  .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn::after {
-      content: "";
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all .1s;
-  }
-  
-  .btn:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-  }
-  
-  .btn-animated {
-      animation: moveInBottom 5s ease-out;
-      animation-fill-mode: backwards;
-  }
-  
-  @keyframes moveInBottom {
-      0% {
-          opacity: 0.7;
-          transform: translateY(30px);
-          /* background-color: aqua; */
-          border-radius: 12px;
-          background-color: rgb(70, 88, 88);
-      }
-      25% {
-          background-color: rgb(45, 218, 218);
-          border-radius: 15px;
-      }
-      50% {
-          background-color: rgb(34, 212, 212);
-          border-radius: 18px;
-      }
-      100% {
-          opacity: 1;
-          transform: translateY(0px);
-          background-color: transparent;
-      }
-  }
-  
-  .h3 {
-      /* Additional styles for the header */
-      font-size: 24px;
-      margin-bottom: 20px;
-      /* Apply button styles */
-      display: inline-block;
-      position: relative;
-      margin-top: 50px;
-      /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); Applied shadow to the header */
-      border-radius: 20px;
-  }
+.h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px;
+}
   
   
 /*-----------------------------------------------------------Responsive--------------------------------------------------------------------*/
 @media (max-width:1000px) {
     .main-container{
         max-width: 750px;
-        margin: 10% 0px;
-        
+        /* margin: 10% 0px; */
+        text-align: center;
     }
 
-    .heading-box h1{
+    .h1{
         font-size: 40px;
         color: #00274A;
     }
@@ -247,7 +103,7 @@ body{
     }
 
     .author-name p{
-        font-size: 12px;
+        font-size: 15px;
     }
     .h3{
         margin-top: 0px;
@@ -258,17 +114,17 @@ body{
 @media (max-width:800px) {
     .main-container{
         max-width: 650px;
-        margin: 10% 0px;
+        /* margin: 10% 0px; */
         
     }
 
-    .heading-box h1{
-        font-size: 30px;
+    .h1{
+        font-size: 40px;
         color: #00274A;
     }
 
     .heading-box .para{
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.9rem;
     }
 
@@ -288,17 +144,17 @@ body{
 @media (max-width:700px) {
     .main-container{
         max-width: 600px;
-        margin: 10% 0px;
+        /* margin: 10% 0px; */
         
     }
 
-    .heading-box h1{
-        font-size: 28px;
+    .h1{
+        font-size: 40px;
         color: #00274A;
     }
 
     .heading-box .para{
-        font-size: 13px;
+        font-size: 15px;
         line-height: 1.6rem;
     }
 }
@@ -329,17 +185,17 @@ body{
 @media (max-width:400px) {
     .main-container{
         max-width: 300px;
-        margin: 10% 0px;
+        /* margin: 10% 0px; */
         
     }
 
-    .heading-box h1{
-        font-size: 25px;
+    .h1{
+        font-size: 40px;
         color: #00274A;
     }
 
     .heading-box .para{
-        font-size: 12px;
+        font-size: 15px;
         line-height: 1.2rem;
     }
 }
