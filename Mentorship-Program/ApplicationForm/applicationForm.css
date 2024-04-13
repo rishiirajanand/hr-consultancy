@@ -109,8 +109,7 @@ button:disabled {
     width: 270px;
     font-size: 20px;
     box-sizing: border-box;
-    text-align: justify;
-    /* font-weight: 700; */
+    text-align: start;
 }
 
 /* ------------------------------Responsive -------------------------------- */
@@ -186,13 +185,6 @@ button:disabled {
         padding: 7px;
     }
 }
-@media (max-width:690px) {
-    .heading {
-        margin-top: 0px;
-        padding-top: 100px;
-    }
-}
-
     @media (max-width:710px) {
         .container{
             width: 330px;
@@ -370,15 +362,4 @@ button:disabled {
     padding: 7px;
         }
     }
-    .sideParagraph {
-        transition: all 0.3s ease;
-        float: left;
-        height: fit-content;
-      }
     
-      .sideParagraph:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        height: fit-content;
-        border-radius: 10px;
-      }
