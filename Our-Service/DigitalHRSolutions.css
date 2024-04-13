@@ -292,16 +292,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width:auto;
+    width: 100%;
   }
 }
-.hover-effect {
+
+/* .hover-effect {
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
   cursor: pointer;
 }
@@ -318,4 +318,4 @@ body {
   width: fit-content;
   border-radius: 10px;
   padding: 8px;
-}
+} */
