@@ -74,7 +74,7 @@ phone.addEventListener("input", validation);
 
 function redirectToHomePage() {
   setTimeout(() => {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   }, 5000);
 }
 
