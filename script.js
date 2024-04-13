@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     preloader.style.display = "none";
     main.style.display = "block";
-  }, 1500);
+  }, 100);
 
   setTimeout(function () {
     var loader = document.querySelector(".loader");
     loader.style.animation = "none";
-  }, 1500);
+  }, 100);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
