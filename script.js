@@ -38,18 +38,31 @@ function loadRandomParagraph() {
 window.onload = loadRandomParagraph;
 
 // Preloader
-let preloader = document.getElementById("preloader");
-let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-function showScrollButton() {
-  scrollToTopBtn.style.display = "flex";
-}
-setTimeout(showScrollButton, 1500);
-function hidePreloader() {
-  preloader.style.display = "none";
-}
-setTimeout(hidePreloader, 1500);
+document.addEventListener("DOMContentLoaded", function () {
+  var preloader = document.querySelector("#preloader");
+  var main = document.querySelector("#main");
 
-// GSAP
+  main.style.display = "none";
+  preloader.style.display = "flex";
+
+  setTimeout(function () {
+    preloader.style.display = "none";
+    main.style.display = "block";
+  }, 1500);
+
+  setTimeout(function () {
+    var loader = document.querySelector(".loader");
+    loader.style.animation = "none";
+  }, 1500);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+  scrollToTopBtn.style.display = "none";
+  setTimeout(function () {
+    scrollToTopBtn.style.display = "block";
+  }, 1500);
+});
 
 // Navbar
 function toggleActive(element) {
