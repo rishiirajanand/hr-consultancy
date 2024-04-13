@@ -951,6 +951,10 @@ ul .box {
   margin-top: 5px;
   font-size: 16px;
 }
+.card button a {
+  text-decoration: none;
+  color: white;
+}
 
 .card button:hover {
   background-color: #1d2031;
@@ -1607,21 +1611,27 @@ footer {
     height: 350px;
   }
   .card {
-    height: 530px;
+    height: auto;
   }
   .insights-header {
-    width: 750px;
+    width: 100vw;
+    padding: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
   .insights-blogs {
-    width: 760px;
+    width: 90vw;
+    padding: 10px;
   }
   .insights-blog1,
   .insights-blog2,
   .insights-blog3 {
     padding-right: 1em;
   }
+  .insights-blogs h2 {
+    padding-right: 10px;
+  }
+
   .author-box .para {
     width: 770px;
   }
@@ -1722,10 +1732,11 @@ footer {
     height: 200px;
   }
   .insights {
+    width: 100vw;
     padding: 40px 30px 10px;
   }
   .insights-header {
-    width: 400px;
+    width: 100vw;
     justify-content: center;
     margin-right: 90px;
     margin-top: 0px;
