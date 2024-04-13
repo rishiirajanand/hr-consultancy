@@ -61,7 +61,9 @@ iframe{
 
 /*----------------------------------------------------Responsible------------------------------------------------------------------*/
 @media (max-width:1000px) {
-
+    .main-container{
+        max-width: 650px;
+    }
     .heading-box h1{
         width: 80%;
         font-weight: 800;
@@ -92,13 +94,15 @@ iframe{
     }
 
     iframe{
-        width: 50%;
+
         margin-top: 2rem;
     }
 }
 
 @media (max-width:800px) {
-
+    .main-container{
+        max-width: 550px;
+    }
     .heading-box h1{
         font-weight: 700;
         font-size: 40px;
@@ -127,13 +131,16 @@ iframe{
     }
 
     iframe{
-        height: 250px;
-        width: 80%;
+        height: 300px;
+        width: 100%;
         margin-top: 1.5rem;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:640px) {
+    .main-container{
+        max-width: 450px;
+    }
     .heading-box h1{
         font-weight: 650;
         font-size: 35px;
@@ -162,15 +169,42 @@ iframe{
     }
 
     iframe{
+        height: 250px;
         margin-top: 1rem;
     }
     .iframe-container{
-        height: 220px;
+        height: 400px;
     }
 }
 
-@media (max-width:500px) {
-    .iframe-container{
+@media (max-width:520px) {
+    .main-container{
+        max-width: 350px;
+    }
+    iframe{
         height: 190px;
+        margin-top: 1rem;
+    }
+    .iframe-container{
+        height: 320px;
+    }
+}
+
+@media (max-width:415px) {
+    .heading-box h1{
+        font-weight: 650;
+        font-size: 25px;
+        color: #00274A;
+        margin-bottom: 0.8rem;
+    }
+    .main-container{
+        max-width: 280px;
+    }
+    iframe{
+        height: 155px;
+        margin-top: 1rem;
+    }
+    .iframe-container{
+        height: 300px;
     }
 }
