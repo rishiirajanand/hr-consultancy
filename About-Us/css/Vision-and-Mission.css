@@ -326,6 +326,11 @@ body{
   .btn-flip {
     padding:0px 20%;
   }
+
+  .text-box {
+    display: grid;
+    justify-content: center;
+  }
 }
 
 @media (max-width:450px) {
