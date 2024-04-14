@@ -41,9 +41,9 @@ Welcome to the HR Consultancy Website! This website is designed to showcase the 
 
 9. **Saroj** ([GitHub](https://github.com/saroj)): Created the insights blog section.
 
-10. **Shubham** ([GitHub](https://github.com/0shubhzzz0)): Created the contact section and ensured the entire page is responsive.
+10. **Shubham** ([GitHub](https://github.com/0shubhzzz0)): Created the contact section and ensured the entire website is responsive.
 
-11. **Harshita** ([GitHub](https://github.com/Harshupaunikar)): Created the contact section and ensured the entire page is responsive.
+11. **Harshita** ([GitHub](https://github.com/Harshupaunikar)): Created the contact section and ensured the entire website is responsive.
 
 12. **Santu** ([GitHub](https://github.com/MadamSantosh1)): Enhanced the website with animations.
 
