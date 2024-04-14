@@ -31,7 +31,7 @@ Welcome to the HR Consultancy Website! This website is designed to showcase the 
 
 4. **Vivek** ([GitHub](https://github.com/vivektech1505)): Created the our team section.
 
-5. **Prabhat** ([GitHub](https://github.com/prabhatshahi)): Created the our services section.
+5. **Prabhat** ([GitHub](https://github.com/prabhatshahi)): Created the our services section And make sure the page is responsive.
 
 6. **Rushabh** ([GitHub](https://github.com/Rushabh407)): Contributed to creating the our services section.
 
